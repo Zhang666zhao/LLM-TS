@@ -1,0 +1,43 @@
+run:
+  name: 20260826_TSRAG_ablation7h
+  seed: 2021
+  max_wall_time_seconds: 25200
+  monitor_interval_seconds: 600
+
+model:
+  context_length: 512
+  prediction_length: 64
+  top_k: 10
+  augment_mode: moe
+  mixer_variant: official
+  frozen_backbone: true
+
+optimizer:
+  name: adamw
+  learning_rate: 0.00003
+  weight_decay: 0.01
+  grad_clip: 1.0
+  scheduler: cosine_annealing
+  scheduler_tmax: 20
+
+data:
+  drop_prob: 0.0
+  shuffle_buffer_length: 10000
+  retrieval_rows: 2792864
+  training_rows: 28013980
+
+execution:
+  devices: [0]
+  global_batch_size: 256
+  gradient_accumulation_steps: 1
+  optimizer_updates: 10000
+  log_every: 100
+  checkpoint_updates: [1000, 5000]
+  official_checkpoint_semantics: pre_update_10000_equals_9999_updates
+
+acceptance:
+  baseline_average_mse: 0.1976023593094361
+  official_average_mse: 0.1939
+  minimum_average_mse_improvement: 0.001
+  maximum_dataset_regression: 0.003
+  minimum_harmed_sample_reduction: 0.10

@@ -1,0 +1,6 @@
+# Copy to paths.local.yaml and edit for the current machine.
+data_root: /path/to/shared/LLM-TS/data
+model_root: /path/to/shared/LLM-TS/models
+artifact_root: /path/to/shared/LLM-TS/artifacts
+run_root: /path/to/shared/LLM-TS/runs
+python: python

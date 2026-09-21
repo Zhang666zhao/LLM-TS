@@ -1,0 +1,19 @@
+{
+  "benchmark_id": "benchmark_v1",
+  "context_length": 512,
+  "datasets": {
+    "ETTh1": {"frequency": "1 hour", "test_windows": 19719, "variables": 7},
+    "ETTh2": {"frequency": "1 hour", "test_windows": 19719, "variables": 7},
+    "ETTm1": {"frequency": "15 minutes", "test_windows": 80199, "variables": 7},
+    "ETTm2": {"frequency": "15 minutes", "test_windows": 80199, "variables": 7},
+    "electricity": {"frequency": "1 hour", "test_windows": 1668237, "variables": 321},
+    "exchange_rate": {"frequency": "1 day", "test_windows": 11632, "variables": 8},
+    "weather": {"frequency": "10 minutes", "test_windows": 219996, "variables": 21}
+  },
+  "metrics": ["mse", "mae"],
+  "prediction_length": 64,
+  "scale": "official standardized scale",
+  "schema_version": "1.0",
+  "source": "TSRAG_ChronosBolt_variable_metrics.xlsx",
+  "split": "test"
+}

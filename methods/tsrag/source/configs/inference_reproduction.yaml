@@ -1,0 +1,44 @@
+benchmark:
+  datasets: [ETTh1, ETTh2, ETTm1, ETTm2, weather, electricity, exchange_rate]
+  context_length: 512
+  prediction_length: 64
+  top_k: 10
+  retrieval_mode: only_self_train
+  augment_mode: moe
+  metrics: [mse, mae]
+  training_allowed: false
+
+paths:
+  data_root: ../Data
+  base_model: ../Data/chronos-bolt-base
+  tsrag_checkpoint: ../Data/TS-RAG-ChronosBolt/pytorch_model.bin
+  retrieved_datasets: ../Data/TS-RAG-Data/datasets_512
+  retrieval_databases: ../Data/TS-RAG-Data/database_512
+  baseline_views: ../artifacts/baseline_raw_v1
+
+execution:
+  initial_batch_size: 256
+  batch_size_fallbacks: [128, 64, 32, 16, 8, 4, 1]
+  num_workers: 4
+  gpu_0: [ETTh1, ETTm1, weather, electricity]
+  gpu_1: [ETTh2, ETTm2, exchange_rate]
+
+paper_targets:
+  tsrag:
+    ETTh1: {mse: 0.3557, mae: 0.3624}
+    ETTh2: {mse: 0.2451, mae: 0.2982}
+    ETTm1: {mse: 0.2906, mae: 0.3114}
+    ETTm2: {mse: 0.1466, mae: 0.2231}
+    weather: {mse: 0.1454, mae: 0.1771}
+    electricity: {mse: 0.1120, mae: 0.2002}
+    exchange_rate: {mse: 0.0627, mae: 0.1718}
+    average: {mse: 0.1940, mae: 0.2492}
+  chronos_bolt:
+    ETTh1: {mse: 0.3616, mae: 0.3650}
+    ETTh2: {mse: 0.2517, mae: 0.2992}
+    ETTm1: {mse: 0.3109, mae: 0.3185}
+    ETTm2: {mse: 0.1487, mae: 0.2236}
+    weather: {mse: 0.1525, mae: 0.1825}
+    electricity: {mse: 0.1132, mae: 0.2004}
+    exchange_rate: {mse: 0.0673, mae: 0.1780}
+    average: {mse: 0.2008, mae: 0.2525}

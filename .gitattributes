@@ -1,0 +1,6 @@
+# Preserve the imported upstream snapshot byte-for-byte. Its historical
+# whitespace is not maintained by this repository.
+methods/tsrag/source/** linguist-vendored whitespace=-trailing-space,-blank-at-eof
+
+# Generated tabular results use stable Unix line endings.
+results/**/*.csv text eol=lf

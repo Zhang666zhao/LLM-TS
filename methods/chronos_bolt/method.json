@@ -1,0 +1,11 @@
+{
+  "adapter": "methods/chronos_bolt/adapter.py",
+  "display_name": "Chronos-Bolt",
+  "id": "chronos_bolt",
+  "implementation": "methods/tsrag/source/inference_reproduce.py",
+  "provenance": {
+    "model": "amazon/chronos-bolt-base",
+    "shared_runner": "TS-RAG reproduction runner at import commit a4bacfa"
+  },
+  "supported_datasets": ["ETTh1", "ETTh2", "ETTm1", "ETTm2", "weather", "electricity", "exchange_rate"]
+}

@@ -1,0 +1,122 @@
+{
+  "benchmark": [
+    {
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "datasets": 7,
+      "mae": 0.2523868290688769,
+      "method": "chronos_bolt",
+      "mse": 0.2007255045682274,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "datasets": 7,
+      "mae": 0.24909050628932525,
+      "method": "tsrag",
+      "mse": 0.19389417357968552,
+      "prediction_length": 64,
+      "seed": 2021
+    }
+  ],
+  "benchmark_id": "benchmark_v1",
+  "comparisons": [
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTh1",
+      "mae_delta": -0.002639102651619374,
+      "mae_improvement_percent": 0.7231315482766133,
+      "method": "tsrag",
+      "mse_delta": -0.005926276255267038,
+      "mse_improvement_percent": 1.6392731815785613,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTh2",
+      "mae_delta": -0.0010606136928484333,
+      "mae_improvement_percent": 0.3545173267796221,
+      "method": "tsrag",
+      "mse_delta": -0.006517935176189954,
+      "mse_improvement_percent": 2.5906611480058714,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTm1",
+      "mae_delta": -0.007017492303111272,
+      "mae_improvement_percent": 2.2046261444144264,
+      "method": "tsrag",
+      "mse_delta": -0.020292118248793012,
+      "mse_improvement_percent": 6.531856288107231,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTm2",
+      "mae_delta": -0.0005171361570768251,
+      "mae_improvement_percent": 0.2313444149151042,
+      "method": "tsrag",
+      "mse_delta": -0.0021051835427019494,
+      "mse_improvement_percent": 1.4170547304182535,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "electricity",
+      "mae_delta": -0.00019081757896918794,
+      "mae_improvement_percent": 0.09519636358636711,
+      "method": "tsrag",
+      "mse_delta": -0.0012612674512492567,
+      "mse_improvement_percent": 1.1137979744235433,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "exchange_rate",
+      "mae_delta": -0.006253728477083831,
+      "mae_improvement_percent": 3.516333927844699,
+      "method": "tsrag",
+      "mse_delta": -0.004667307155151214,
+      "mse_improvement_percent": 6.955221685342591,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "weather",
+      "mae_delta": -0.005395368596152278,
+      "mae_improvement_percent": 2.95725956142159,
+      "method": "tsrag",
+      "mse_delta": -0.007049229090440673,
+      "mse_improvement_percent": 4.625575341036803,
+      "prediction_length": 64,
+      "seed": 2021
+    }
+  ],
+  "row_count": 756,
+  "schema_version": "1.0",
+  "source": "TSRAG_ChronosBolt_variable_metrics.xlsx",
+  "source_sha256": "5238e79d6ea3a8eac16d2187950d44659575d0726307f3a86415ee89e797d90e"
+}

@@ -203,6 +203,25 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# LLM-TS local state and large experiment material
+configs/paths.local.yaml
+data/raw/
+data/processed/
+/models/
+checkpoints/
+artifacts/
+runs/*
+!runs/.gitkeep
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.pkl
+*.pickle
+wandb/
+
 # Ruff stuff:
 .ruff_cache/
 

@@ -1,0 +1,8 @@
+datasets:
+  ETTh1: {frequency: "1 hour", variables: 7}
+  ETTh2: {frequency: "1 hour", variables: 7}
+  ETTm1: {frequency: "15 minutes", variables: 7}
+  ETTm2: {frequency: "15 minutes", variables: 7}
+  weather: {frequency: "10 minutes", variables: 21}
+  electricity: {frequency: "1 hour", variables: 321}
+  exchange_rate: {frequency: "1 day", variables: 8}

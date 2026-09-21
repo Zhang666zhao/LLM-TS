@@ -1,0 +1,13 @@
+{
+  "adapter": "methods/tsrag/adapter.py",
+  "display_name": "TS-RAG",
+  "id": "tsrag",
+  "implementation": "methods/tsrag/source",
+  "provenance": {
+    "import_commit": "a4bacfa",
+    "imported_from": "GPU_Foundation:TSRAG working tree",
+    "source_branch": "research/tsrag-retrieval-offline",
+    "upstream": "https://github.com/UConn-DSIS/TS-RAG"
+  },
+  "supported_datasets": ["ETTh1", "ETTh2", "ETTm1", "ETTm2", "weather", "electricity", "exchange_rate"]
+}

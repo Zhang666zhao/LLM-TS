@@ -1,0 +1,30 @@
+[project]
+name = "ts-rag-inference-reproduction"
+version = "0.1.0"
+requires-python = "==3.9.*"
+dependencies = [
+  "numpy==1.23.5",
+  "pandas==1.5.3",
+  "scikit-learn==1.3.0",
+  "torch==2.0.1",
+  "transformers==4.46.1",
+  "safetensors==0.7.0",
+  "gluonts==0.16.3",
+  "tqdm>=4.64,<5",
+  "statsmodels>=0.13,<0.15",
+  "matplotlib>=3.5,<4",
+  "pyyaml>=6,<7",
+]
+
+[tool.tsrag-reproduction]
+training_allowed = false
+context_length = 512
+prediction_length = 64
+top_k = 10
+augment_mode = "moe"
+
+[tool.tsrag-arm-training]
+training_allowed = true
+backbone_frozen = true
+trainable_parameter_count = 4775425
+max_wall_time_seconds = 21600

@@ -1,0 +1,8 @@
+{
+  "adapter": "methods/template/adapter.py",
+  "display_name": "New method",
+  "id": "template",
+  "implementation": "methods/template/source",
+  "provenance": {},
+  "supported_datasets": []
+}

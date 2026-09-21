@@ -1,0 +1,12 @@
+benchmark_id: benchmark_v1
+schema_version: "1.0"
+data_manifest: data/manifests/benchmark_v1.json
+datasets: [ETTh1, ETTh2, ETTm1, ETTm2, weather, electricity, exchange_rate]
+context_length: 512
+prediction_length: 64
+metrics: [mse, mae]
+aggregation:
+  variable: mean_over_all_test_windows_and_horizon_values
+  dataset: mean_over_all_values
+  benchmark: macro_mean_over_datasets
+lower_is_better: [mse, mae]
