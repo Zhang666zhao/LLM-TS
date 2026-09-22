@@ -1,0 +1,14 @@
+{
+  "adapter": "methods/dlinear/adapter.py",
+  "display_name": "DLinear (shared)",
+  "id": "dlinear",
+  "implementation": "methods/dlinear/source/train_dlinear_shared.py",
+  "provenance": {
+    "imported_trainer_sha256": "77435e669060c3c6d27f8afbe258aa8702f15aa1c68b2f6ed44970a26a3dcb3f",
+    "model_sha256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+    "upstream": "https://github.com/cure-lab/LTSF-Linear",
+    "upstream_commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6"
+  },
+  "supported_datasets": ["ETTh1", "ETTh2", "ETTm1", "ETTm2", "weather", "electricity", "exchange_rate"],
+  "training_regime": "supervised_per_dataset"
+}

@@ -1,0 +1,75 @@
+{
+  "best_val_mse": 0.3439324155922755,
+  "channel_count": 7,
+  "context_length": 512,
+  "data_path": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/artifacts/baseline_raw_v1/ETTm1.csv",
+  "data_sha256": "98b2af6d8ea4a3a5a43bb169377b0d0ee61b0b52c82024ee142c1c349cc864e9",
+  "dataset": "ETTm1",
+  "elapsed_seconds": 328.87827441096306,
+  "environment": {
+    "cuda": "11.7",
+    "gpu": "NVIDIA RTX A6000",
+    "numpy": "1.23.5",
+    "pandas": "1.5.3",
+    "python": "3.9.23",
+    "sklearn": "1.3.0",
+    "torch": "2.0.1+cu117"
+  },
+  "finished_at": "2026-09-22T21:39:10.668406+08:00",
+  "invariants": {
+    "all_predictions_finite": true,
+    "cross_channel_invariance_max_delta": 0.0,
+    "individual": false,
+    "official_model_unmodified": true,
+    "test_drop_last": false
+  },
+  "mae": 0.33954563640833907,
+  "model": "DLinear_shared_official",
+  "mse": 0.29252926863834333,
+  "official_model_sha256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+  "official_repo_commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+  "parameter_count": 65664,
+  "peak_vram_bytes": 19299328,
+  "prediction_length": 64,
+  "sample_count_tsrag_semantics": 80199,
+  "scaler_mean": [
+    7.9900134819611495,
+    2.0387478002096975,
+    5.109928063464273,
+    0.7562241616995178,
+    2.80470208448802,
+    0.7911860229808587,
+    17.12495024489946
+  ],
+  "scaler_scale": [
+    5.833092669188608,
+    2.0896456935496084,
+    5.519042716237789,
+    1.9241610579070023,
+    1.0405540563014364,
+    0.632442061366721,
+    9.173035273908697
+  ],
+  "seed": 2021,
+  "split": {
+    "test_end": 57600,
+    "test_start": 45568,
+    "train_end": 34560,
+    "train_start": 0,
+    "val_end": 46080,
+    "val_start": 34048
+  },
+  "started_at": "2026-09-22T21:33:41.790065+08:00",
+  "status": "complete",
+  "value_count": 5132736,
+  "variables": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "window_count": 11457
+}

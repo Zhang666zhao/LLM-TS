@@ -12,8 +12,9 @@ from evaluation.import_excel import import_workbook
 
 def main() -> None:
     source = ROOT / "results/benchmark_v1/source/TSRAG_ChronosBolt_variable_metrics.xlsx"
-    result = import_workbook(source, ROOT / "results/benchmark_v1")
-    print(f"imported {len(result['rows'])} rows from {source.name}; no inference executed")
+    dlinear_source = ROOT / "results/benchmark_v1/source/dlinear/variable_metrics.csv"
+    result = import_workbook(source, ROOT / "results/benchmark_v1", dlinear_source)
+    print(f"imported {len(result['rows'])} rows from completed result sources; no inference executed")
 
 
 if __name__ == "__main__":

@@ -14,6 +14,16 @@
       "benchmark_id": "benchmark_v1",
       "context_length": 512,
       "datasets": 7,
+      "mae": 0.2748751095859167,
+      "method": "dlinear",
+      "mse": 0.19850722644067428,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "datasets": 7,
       "mae": 0.24909050628932525,
       "method": "tsrag",
       "mse": 0.19389417357968552,
@@ -23,6 +33,97 @@
   ],
   "benchmark_id": "benchmark_v1",
   "comparisons": [
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTh1",
+      "mae_delta": 0.01913042697854861,
+      "mae_improvement_percent": -5.241863279437809,
+      "method": "dlinear",
+      "mse_delta": -0.008255596753620031,
+      "mse_improvement_percent": 2.2835888462183322,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTh2",
+      "mae_delta": 0.031282336183834025,
+      "mae_improvement_percent": -10.456333228670767,
+      "method": "dlinear",
+      "mse_delta": 0.0016743316402783592,
+      "mse_improvement_percent": -0.6654908053077075,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTm1",
+      "mae_delta": 0.021238048480536564,
+      "mae_improvement_percent": -6.672177882656605,
+      "method": "dlinear",
+      "mse_delta": -0.018134612404776873,
+      "mse_improvement_percent": 5.837373930914032,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "ETTm2",
+      "mae_delta": 0.01761422779705918,
+      "mae_improvement_percent": -7.879845893828404,
+      "method": "dlinear",
+      "mse_delta": -0.00427323492250023,
+      "mse_improvement_percent": 2.8764274650111825,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "electricity",
+      "mae_delta": 0.02414922124110863,
+      "mae_improvement_percent": -12.04772672421031,
+      "method": "dlinear",
+      "mse_delta": 0.013527331382966343,
+      "mse_improvement_percent": -11.945693420361165,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "exchange_rate",
+      "mae_delta": 0.016425107648504356,
+      "mae_improvement_percent": -9.235476644785438,
+      "method": "dlinear",
+      "mse_delta": 0.0022459461587399365,
+      "mse_improvement_percent": -3.346909236547514,
+      "prediction_length": 64,
+      "seed": 2021
+    },
+    {
+      "baseline": "chronos_bolt",
+      "benchmark_id": "benchmark_v1",
+      "context_length": 512,
+      "dataset": "weather",
+      "mae_delta": 0.027578595289687396,
+      "mae_improvement_percent": -15.11612472022155,
+      "method": "dlinear",
+      "mse_delta": -0.002312111993959115,
+      "mse_improvement_percent": 1.517165648577913,
+      "prediction_length": 64,
+      "seed": 2021
+    },
     {
       "baseline": "chronos_bolt",
       "benchmark_id": "benchmark_v1",
@@ -115,8 +216,27 @@
       "seed": 2021
     }
   ],
-  "row_count": 756,
+  "method_metadata": {
+    "chronos_bolt": {
+      "training_regime": "zero_shot"
+    },
+    "dlinear": {
+      "training_regime": "supervised_per_dataset"
+    },
+    "tsrag": {
+      "training_regime": "zero_shot"
+    }
+  },
+  "row_count": 1134,
   "schema_version": "1.0",
-  "source": "TSRAG_ChronosBolt_variable_metrics.xlsx",
-  "source_sha256": "5238e79d6ea3a8eac16d2187950d44659575d0726307f3a86415ee89e797d90e"
+  "sources": [
+    {
+      "path": "TSRAG_ChronosBolt_variable_metrics.xlsx",
+      "sha256": "5238e79d6ea3a8eac16d2187950d44659575d0726307f3a86415ee89e797d90e"
+    },
+    {
+      "path": "dlinear/variable_metrics.csv",
+      "sha256": "524138075cf5367ee3fa43d38c961aaf3c3fae6bc8a69b67dd71a7e3642835f5"
+    }
+  ]
 }

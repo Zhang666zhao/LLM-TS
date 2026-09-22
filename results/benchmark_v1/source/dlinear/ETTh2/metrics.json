@@ -1,0 +1,75 @@
+{
+  "best_val_mse": 0.18416952663877958,
+  "channel_count": 7,
+  "context_length": 512,
+  "data_path": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/artifacts/baseline_raw_v1/ETTh2.csv",
+  "data_sha256": "ad51d097c538410648fdb03264c74f51c646d08fa9cd67d633f20f082c1c7214",
+  "dataset": "ETTh2",
+  "elapsed_seconds": 48.15213365107775,
+  "environment": {
+    "cuda": "11.7",
+    "gpu": "NVIDIA RTX A6000",
+    "numpy": "1.23.5",
+    "pandas": "1.5.3",
+    "python": "3.9.23",
+    "sklearn": "1.3.0",
+    "torch": "2.0.1+cu117"
+  },
+  "finished_at": "2026-09-22T21:33:30.914583+08:00",
+  "invariants": {
+    "all_predictions_finite": true,
+    "cross_channel_invariance_max_delta": 0.0,
+    "individual": false,
+    "official_model_unmodified": true,
+    "test_drop_last": false
+  },
+  "mae": 0.3304535226764312,
+  "model": "DLinear_shared_official",
+  "mse": 0.2532678363024783,
+  "official_model_sha256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+  "official_repo_commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+  "parameter_count": 65664,
+  "peak_vram_bytes": 23630336,
+  "prediction_length": 64,
+  "sample_count_tsrag_semantics": 19719,
+  "scaler_mean": [
+    41.53683496078959,
+    12.273452896210882,
+    46.60977329964991,
+    10.526153112865156,
+    1.1869920139097505,
+    -2.373217913729173,
+    26.872023494265697
+  ],
+  "scaler_scale": [
+    10.448841072588488,
+    4.587112566531959,
+    16.858190332598408,
+    3.018605566682919,
+    4.641011217319063,
+    8.460910779279644,
+    11.584718923414682
+  ],
+  "seed": 2021,
+  "split": {
+    "test_end": 14400,
+    "test_start": 11008,
+    "train_end": 8640,
+    "train_start": 0,
+    "val_end": 11520,
+    "val_start": 8128
+  },
+  "started_at": "2026-09-22T21:32:42.762395+08:00",
+  "status": "complete",
+  "value_count": 1262016,
+  "variables": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "window_count": 2817
+}

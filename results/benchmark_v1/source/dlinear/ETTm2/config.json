@@ -1,0 +1,17 @@
+{
+  "batch_size": 32,
+  "context": 512,
+  "data_root": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/artifacts/baseline_raw_v1",
+  "dataset": "ETTm2",
+  "epochs": 10,
+  "gpu": 0,
+  "horizon": 64,
+  "learning_rate": 0.001,
+  "max_eval_batches": null,
+  "max_train_batches": null,
+  "official_repo": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/third_party/LTSF-Linear",
+  "output": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20260922_DLinear_shared_ctx512_pred64/ETTm2",
+  "patience": 3,
+  "seed": 2021,
+  "workers": 4
+}

@@ -1,0 +1,78 @@
+{
+  "best_val_mse": 0.10294215675838354,
+  "channel_count": 8,
+  "context_length": 512,
+  "data_path": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/artifacts/baseline_raw_v1/exchange_rate.csv",
+  "data_sha256": "1acd5bc2b53a46948848a13f7df36af5be81c0bc8d68e8e62918f2546a7fe583",
+  "dataset": "exchange_rate",
+  "elapsed_seconds": 20.050726115703583,
+  "environment": {
+    "cuda": "11.7",
+    "gpu": "NVIDIA RTX A6000",
+    "numpy": "1.23.5",
+    "pandas": "1.5.3",
+    "python": "3.9.23",
+    "sklearn": "1.3.0",
+    "torch": "2.0.1+cu117"
+  },
+  "finished_at": "2026-09-22T21:41:51.550420+08:00",
+  "invariants": {
+    "all_predictions_finite": true,
+    "cross_channel_invariance_max_delta": 0.0,
+    "individual": false,
+    "official_model_unmodified": true,
+    "test_drop_last": false
+  },
+  "mae": 0.19427307673820315,
+  "model": "DLinear_shared_official",
+  "mse": 0.06935102729493266,
+  "official_model_sha256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+  "official_repo_commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+  "parameter_count": 65664,
+  "peak_vram_bytes": 19338240,
+  "prediction_length": 64,
+  "sample_count_tsrag_semantics": 11632,
+  "scaler_mean": [
+    0.7229358747881756,
+    1.671601238373188,
+    0.785566129919036,
+    0.755919234795707,
+    0.13668337883637732,
+    0.008887640369045378,
+    0.6267546676708718,
+    0.6048248685746563
+  ],
+  "scaler_scale": [
+    0.10310762163854703,
+    0.16755898212938228,
+    0.10352909488756137,
+    0.10453969339531399,
+    0.02614358389110788,
+    0.0011011469241223103,
+    0.055640679736433614,
+    0.09529949685465589
+  ],
+  "seed": 2021,
+  "split": {
+    "test_end": 7588,
+    "test_start": 5559,
+    "train_end": 5311,
+    "train_start": 0,
+    "val_end": 6071,
+    "val_start": 4799
+  },
+  "started_at": "2026-09-22T21:41:31.499618+08:00",
+  "status": "complete",
+  "value_count": 744448,
+  "variables": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "OT"
+  ],
+  "window_count": 1454
+}

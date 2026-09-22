@@ -18,6 +18,10 @@ variables; benchmark summaries are macro means across datasets. This matches
 the existing workbook because every variable within a dataset has the same
 number of test windows and horizon values.
 
+Training regime is method metadata rather than a metric column. Reports must
+distinguish zero-shot TS-RAG/Chronos-Bolt from supervised per-dataset DLinear;
+their scores share an evaluation protocol but not a training protocol.
+
 ## Run result schema
 
 New inference adapters should also write `metrics.json` with:

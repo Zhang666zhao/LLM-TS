@@ -1,9 +1,14 @@
 benchmark_id: benchmark_v1
-methods: [tsrag, chronos_bolt]
+methods: [tsrag, chronos_bolt, dlinear]
 datasets: [ETTh1, ETTh2, ETTm1, ETTm2, weather, electricity, exchange_rate]
 seed: 2021
 context_length: 512
 prediction_length: 64
 metrics: [mse, mae]
 source_result: results/benchmark_v1/source/TSRAG_ChronosBolt_variable_metrics.xlsx
+additional_source: results/benchmark_v1/source/dlinear/variable_metrics.csv
 inference_required: false
+training_regimes:
+  tsrag: zero_shot
+  chronos_bolt: zero_shot
+  dlinear: supervised_per_dataset

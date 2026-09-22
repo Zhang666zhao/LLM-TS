@@ -5,7 +5,8 @@ methods under one data and evaluation contract. Method implementations live in
 `methods/`; datasets, checkpoints, large artifacts, and full run directories do
 not belong in Git.
 
-The first benchmark snapshot compares **TS-RAG** with **Chronos-Bolt** using
+The first benchmark snapshot compares **TS-RAG**, **Chronos-Bolt**, and
+supervised **DLinear** using
 context length 512, prediction length 64, and variable-level MSE/MAE. The
 published result is imported from an existing completed experiment. Importing
 or validating it does not rerun inference.
@@ -42,6 +43,7 @@ Copy the local path template and point it at shared NFS storage:
 cp configs/paths.example.yaml configs/paths.local.yaml
 python scripts/run_method.py --method tsrag --dataset ETTh1 --dry-run
 python scripts/run_method.py --method chronos_bolt --dataset ETTh1 --dry-run
+python scripts/run_method.py --method dlinear --dataset ETTh1 --dry-run
 ```
 
 Remove `--dry-run` only when an inference run is intentionally requested.
