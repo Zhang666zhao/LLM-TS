@@ -1,5 +1,13 @@
 # benchmark_v1
 
+The [method comparison](method_comparison.md) additionally includes TimeMRA's
+Weather result and the completed 49 evaluations from the seven-method
+`20260926_baselines_ctx512_pred64` suite, added on 2026-09-28. These new results
+are stored separately in `baselines_512_64_20260928.json`; the original importer
+outputs below remain unchanged. See `baselines_512_64_20260928_audit.md` for
+training regimes and the user-authorized PatchTST Electricity stop: its result
+evaluates epoch 56 after 64 completed epochs, not a 30-epoch run.
+
 This snapshot compares TS-RAG, Chronos-Bolt, and shared DLinear across seven datasets using
 context length 512 and prediction length 64. It was imported from the completed
 workbook in `source/`; no inference was rerun.

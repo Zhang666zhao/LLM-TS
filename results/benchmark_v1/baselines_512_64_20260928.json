@@ -1,0 +1,508 @@
+{
+  "run": "20260926_baselines_ctx512_pred64",
+  "context_length": 512,
+  "prediction_length": 64,
+  "seed": 2021,
+  "completed_evaluations": 49,
+  "expected_evaluations": 49,
+  "unresolved_failed_attempts": 0,
+  "user_authorized_stopped_attempts": 1,
+  "patchtst_electricity": {
+    "completed_epochs": 64,
+    "selected_epoch": 56,
+    "evaluation_only_attempt": "attempt02",
+    "is_30_epoch_result": false
+  },
+  "results": [
+    {
+      "method": "fredf",
+      "dataset": "ETTh1",
+      "mse": 0.3639470078185843,
+      "mae": 0.3944919477199764,
+      "windows": 2817,
+      "eval_seconds": 0.8136773258447647,
+      "peak_gpu_bytes": 173826048,
+      "source": "fredf_ETTh1/attempt01/metrics.json"
+    },
+    {
+      "method": "fredf",
+      "dataset": "ETTh2",
+      "mse": 0.25435185785351067,
+      "mae": 0.3255362357921342,
+      "windows": 2817,
+      "eval_seconds": 0.7832782715559006,
+      "peak_gpu_bytes": 163278336,
+      "source": "fredf_ETTh2/attempt01/metrics.json"
+    },
+    {
+      "method": "fredf",
+      "dataset": "ETTm1",
+      "mse": 0.2811794382691888,
+      "mae": 0.33834124710486624,
+      "windows": 11457,
+      "eval_seconds": 2.0371799543499947,
+      "peak_gpu_bytes": 163850752,
+      "source": "fredf_ETTm1/attempt01/metrics.json"
+    },
+    {
+      "method": "fredf",
+      "dataset": "ETTm2",
+      "mse": 0.14086961147424118,
+      "mae": 0.23838763773939742,
+      "windows": 11457,
+      "eval_seconds": 1.7336807698011398,
+      "peak_gpu_bytes": 163850752,
+      "source": "fredf_ETTm2/attempt01/metrics.json"
+    },
+    {
+      "method": "fredf",
+      "dataset": "electricity",
+      "mse": 0.11669437007483,
+      "mae": 0.21192702051784842,
+      "windows": 5197,
+      "eval_seconds": 69.4451566413045,
+      "peak_gpu_bytes": 998545920,
+      "source": "fredf_electricity/attempt01/metrics.json"
+    },
+    {
+      "method": "fredf",
+      "dataset": "exchange_rate",
+      "mse": 0.08440827015114184,
+      "mae": 0.20901246214348404,
+      "windows": 1454,
+      "eval_seconds": 0.5277868658304214,
+      "peak_gpu_bytes": 163360256,
+      "source": "fredf_exchange_rate/attempt01/metrics.json"
+    },
+    {
+      "method": "fredf",
+      "dataset": "weather",
+      "mse": 0.13745366198036707,
+      "mae": 0.18378435786262043,
+      "windows": 10476,
+      "eval_seconds": 2.561983957886696,
+      "peak_gpu_bytes": 183821312,
+      "source": "fredf_weather/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "ETTh1",
+      "mse": 0.3859654953349861,
+      "mae": 0.411312774922627,
+      "windows": 2817,
+      "eval_seconds": 1.3687133863568306,
+      "peak_gpu_bytes": 681452544,
+      "source": "frets_ETTh1/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "ETTh2",
+      "mse": 0.27020552184927865,
+      "mae": 0.34330883150308894,
+      "windows": 2817,
+      "eval_seconds": 1.3524612039327621,
+      "peak_gpu_bytes": 681452544,
+      "source": "frets_ETTh2/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "ETTm1",
+      "mse": 0.3023397941140417,
+      "mae": 0.34701450199026895,
+      "windows": 11457,
+      "eval_seconds": 4.297567769885063,
+      "peak_gpu_bytes": 681452544,
+      "source": "frets_ETTm1/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "ETTm2",
+      "mse": 0.15139960925659396,
+      "mae": 0.2446010682073885,
+      "windows": 11457,
+      "eval_seconds": 4.5494469702243805,
+      "peak_gpu_bytes": 681452544,
+      "source": "frets_ETTm2/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "electricity",
+      "mse": 0.12553206926913427,
+      "mae": 0.22535311758261692,
+      "windows": 5197,
+      "eval_seconds": 112.02172043174505,
+      "peak_gpu_bytes": 17828066304,
+      "source": "frets_electricity/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "exchange_rate",
+      "mse": 0.07309595251104294,
+      "mae": 0.19614779497376472,
+      "windows": 1454,
+      "eval_seconds": 1.1180816739797592,
+      "peak_gpu_bytes": 748635136,
+      "source": "frets_exchange_rate/attempt01/metrics.json"
+    },
+    {
+      "method": "frets",
+      "dataset": "weather",
+      "mse": 0.136913864625691,
+      "mae": 0.19704314879021465,
+      "windows": 10476,
+      "eval_seconds": 10.20998229086399,
+      "peak_gpu_bytes": 1445848064,
+      "source": "frets_weather/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "ETTh1",
+      "mse": 0.38369111214883894,
+      "mae": 0.4110709372300661,
+      "windows": 2817,
+      "eval_seconds": 0.858364924788475,
+      "peak_gpu_bytes": 173825024,
+      "source": "itransformer_ETTh1/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "ETTh2",
+      "mse": 0.26457436192787553,
+      "mae": 0.33522095615989567,
+      "windows": 2817,
+      "eval_seconds": 0.7264586389064789,
+      "peak_gpu_bytes": 163277312,
+      "source": "itransformer_ETTh2/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "ETTm1",
+      "mse": 0.28536268565544953,
+      "mae": 0.3462306311364377,
+      "windows": 11457,
+      "eval_seconds": 1.8811390474438667,
+      "peak_gpu_bytes": 163849728,
+      "source": "itransformer_ETTm1/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "ETTm2",
+      "mse": 0.15288356644169757,
+      "mae": 0.2529028068479131,
+      "windows": 11457,
+      "eval_seconds": 1.7200435549020767,
+      "peak_gpu_bytes": 163849728,
+      "source": "itransformer_ETTm2/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "electricity",
+      "mse": 0.12088077124589235,
+      "mae": 0.2164336358182591,
+      "windows": 5197,
+      "eval_seconds": 75.20943741500378,
+      "peak_gpu_bytes": 998544896,
+      "source": "itransformer_electricity/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "exchange_rate",
+      "mse": 0.07267171723494387,
+      "mae": 0.19285317392716897,
+      "windows": 1454,
+      "eval_seconds": 0.5388534590601921,
+      "peak_gpu_bytes": 163359232,
+      "source": "itransformer_exchange_rate/attempt01/metrics.json"
+    },
+    {
+      "method": "itransformer",
+      "dataset": "weather",
+      "mse": 0.143777819148958,
+      "mae": 0.19473073120694817,
+      "windows": 10476,
+      "eval_seconds": 2.381653755903244,
+      "peak_gpu_bytes": 183820288,
+      "source": "itransformer_weather/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "ETTh1",
+      "mse": 0.6237830634411029,
+      "mae": 0.5312619465139269,
+      "windows": 2817,
+      "eval_seconds": 82.634441845119,
+      "peak_gpu_bytes": 1499926016,
+      "source": "moment_ETTh1/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "ETTh2",
+      "mse": 0.3132864594994119,
+      "mae": 0.3767815225692111,
+      "windows": 2817,
+      "eval_seconds": 495.9330377727747,
+      "peak_gpu_bytes": 1499926016,
+      "source": "moment_ETTh2/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "ETTm1",
+      "mse": 0.6748769655015199,
+      "mae": 0.5252564923275096,
+      "windows": 11457,
+      "eval_seconds": 1282.2222200259566,
+      "peak_gpu_bytes": 1499926016,
+      "source": "moment_ETTm1/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "ETTm2",
+      "mse": 0.24995147413683183,
+      "mae": 0.32611844664292744,
+      "windows": 11457,
+      "eval_seconds": 1870.3432479128242,
+      "peak_gpu_bytes": 1499926016,
+      "source": "moment_ETTm2/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "electricity",
+      "mse": 0.6832763632754353,
+      "mae": 0.6130492945519022,
+      "windows": 5197,
+      "eval_seconds": 28973.297270305455,
+      "peak_gpu_bytes": 1505650176,
+      "source": "moment_electricity/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "exchange_rate",
+      "mse": 0.40991737112977344,
+      "mae": 0.47617806174514365,
+      "windows": 1454,
+      "eval_seconds": 173.7379134595394,
+      "peak_gpu_bytes": 1504125440,
+      "source": "moment_exchange_rate/attempt01/metrics.json"
+    },
+    {
+      "method": "moment",
+      "dataset": "weather",
+      "mse": 0.2585914866661779,
+      "mae": 0.3118631681766094,
+      "windows": 10476,
+      "eval_seconds": 914.4559958875179,
+      "peak_gpu_bytes": 1504182784,
+      "source": "moment_weather/attempt01/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "ETTh1",
+      "mse": 0.35545584896412563,
+      "mae": 0.390419520667635,
+      "windows": 2817,
+      "eval_seconds": 0.6290452033281326,
+      "peak_gpu_bytes": 647338496,
+      "source": "patchtst_ETTh1/attempt01/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "ETTh2",
+      "mse": 0.24276911420308217,
+      "mae": 0.3167458824977208,
+      "windows": 2817,
+      "eval_seconds": 0.6482187137007713,
+      "peak_gpu_bytes": 647338496,
+      "source": "patchtst_ETTh2/attempt01/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "ETTm1",
+      "mse": 0.27586205810001,
+      "mae": 0.33438606380463326,
+      "windows": 11457,
+      "eval_seconds": 2.970848523080349,
+      "peak_gpu_bytes": 2473231360,
+      "source": "patchtst_ETTm1/attempt01/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "ETTm2",
+      "mse": 0.14456195374910674,
+      "mae": 0.24125188990615792,
+      "windows": 11457,
+      "eval_seconds": 3.140889950096607,
+      "peak_gpu_bytes": 2473231360,
+      "source": "patchtst_ETTm2/attempt01/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "electricity",
+      "mse": 0.11883024684022134,
+      "mae": 0.21403348508123388,
+      "windows": 5197,
+      "eval_seconds": 112.68749908357859,
+      "peak_gpu_bytes": 5594375680,
+      "source": "patchtst_electricity/attempt02/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "exchange_rate",
+      "mse": 0.06140749001007836,
+      "mae": 0.17437715918531166,
+      "windows": 1454,
+      "eval_seconds": 0.5542290508747101,
+      "peak_gpu_bytes": 737197568,
+      "source": "patchtst_exchange_rate/attempt01/metrics.json"
+    },
+    {
+      "method": "patchtst",
+      "dataset": "weather",
+      "mse": 0.12591943052661625,
+      "mae": 0.1723284476508375,
+      "windows": 10476,
+      "eval_seconds": 7.691291898488998,
+      "peak_gpu_bytes": 7366548480,
+      "source": "patchtst_weather/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "ETTh1",
+      "mse": 0.4072160504521394,
+      "mae": 0.4329432104734066,
+      "windows": 2817,
+      "eval_seconds": 421.81196454167366,
+      "peak_gpu_bytes": 1223288320,
+      "source": "timecma_ETTh1/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "ETTh2",
+      "mse": 0.3084704923366862,
+      "mae": 0.3649224761287837,
+      "windows": 2817,
+      "eval_seconds": 396.37442872673273,
+      "peak_gpu_bytes": 1222239744,
+      "source": "timecma_ETTh2/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "ETTm1",
+      "mse": 0.3162181158429374,
+      "mae": 0.3678669243492673,
+      "windows": 11457,
+      "eval_seconds": 1685.1252840906382,
+      "peak_gpu_bytes": 1223288320,
+      "source": "timecma_ETTm1/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "ETTm2",
+      "mse": 0.16779604844736945,
+      "mae": 0.25868205389840715,
+      "windows": 11457,
+      "eval_seconds": 1256.3984203711152,
+      "peak_gpu_bytes": 1224570880,
+      "source": "timecma_ETTm2/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "electricity",
+      "mse": 0.13564252992381565,
+      "mae": 0.2375773710648406,
+      "windows": 5197,
+      "eval_seconds": 23.750315472483635,
+      "peak_gpu_bytes": 2552841216,
+      "source": "timecma_electricity/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "exchange_rate",
+      "mse": 0.14647024416553514,
+      "mae": 0.29072051634096757,
+      "windows": 1454,
+      "eval_seconds": 0.4356934726238251,
+      "peak_gpu_bytes": 1223190016,
+      "source": "timecma_exchange_rate/attempt01/metrics.json"
+    },
+    {
+      "method": "timecma",
+      "dataset": "weather",
+      "mse": 0.1399332251553691,
+      "mae": 0.1960176089596792,
+      "windows": 10476,
+      "eval_seconds": 35.63139749318361,
+      "peak_gpu_bytes": 1224407040,
+      "source": "timecma_weather/attempt01/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "ETTh1",
+      "mse": 0.37420842344202265,
+      "mae": 0.3997864537708656,
+      "windows": 2817,
+      "eval_seconds": 9.37205259501934,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/ETTh1/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "ETTh2",
+      "mse": 0.2771324289604107,
+      "mae": 0.3392714618831023,
+      "windows": 2817,
+      "eval_seconds": 9.36256006360054,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/ETTh2/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "ETTm1",
+      "mse": 0.311361808803731,
+      "mae": 0.3607966123864473,
+      "windows": 11457,
+      "eval_seconds": 37.952360436320305,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/ETTm1/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "ETTm2",
+      "mse": 0.1575531791632692,
+      "mae": 0.25017118754834894,
+      "windows": 11457,
+      "eval_seconds": 37.929041400551796,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/ETTm2/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "electricity",
+      "mse": 0.12114051661645227,
+      "mae": 0.22283408080885508,
+      "windows": 5197,
+      "eval_seconds": 640.0916898995638,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/electricity/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "exchange_rate",
+      "mse": 0.09324865787816454,
+      "mae": 0.22201075439487658,
+      "windows": 1454,
+      "eval_seconds": 5.287664100527763,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/exchange_rate/metrics.json"
+    },
+    {
+      "method": "unitime",
+      "dataset": "weather",
+      "mse": 0.14474579857409944,
+      "mae": 0.2046472976824781,
+      "windows": 10476,
+      "eval_seconds": 722.9964397698641,
+      "peak_gpu_bytes": 11078611456,
+      "source": "unitime_joint/attempt01/weather/metrics.json"
+    }
+  ]
+}
