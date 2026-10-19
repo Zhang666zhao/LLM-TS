@@ -168,8 +168,14 @@ def verify(a):
     (a.run/'summary.md').write_text('\n'.join(lines)+'\n')
 
 def launch(a):
-    a.run.mkdir(parents=True,exist_ok=False);start=time.time();deadline=start+7200
-    dump(a.run/'budget.json',dict(start=start,deadline=deadline,max_seconds=7200,max_evaluations=80,new_training=0,gpus=[0,1]))
+    start=time.time()
+    inherited=read(a.budget_source) if a.budget_source else None
+    deadline=inherited['deadline'] if inherited else start+7200
+    assert deadline>start,'Original budget already expired'
+    a.run.mkdir(parents=True,exist_ok=False)
+    dump(a.run/'budget.json',dict(start=inherited['start'] if inherited else start,
+         restart_at=start,deadline=deadline,max_seconds=7200,max_evaluations=80,new_training=0,gpus=[0,1],
+         budget_source=str(a.budget_source) if a.budget_source else None,deadline_reset=False))
     dump(a.run/'pid.json',dict(pid=os.getpid()));running={};completed=[];pending=[];handles=[]
     def status(state,**kw):dump(a.run/'status.json',dict(status=state,completed_batches=completed,pending_batches=pending,
         running={str(g):dict(batch=k,pid=p.pid) for g,(k,p) in running.items()},total_batches=10,evaluations_per_batch=8,updated_at=time.time(),**kw))
@@ -211,4 +217,5 @@ if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('mode',choices=['launch','worker','verify'])
     p.add_argument('--project',type=Path,required=True);p.add_argument('--run',type=Path,required=True)
     p.add_argument('--method',choices=METHODS);p.add_argument('--strategy',choices=['A','B']);p.add_argument('--deadline',type=float)
+    p.add_argument('--budget-source',type=Path)
     a=p.parse_args();globals()[a.mode](a)
