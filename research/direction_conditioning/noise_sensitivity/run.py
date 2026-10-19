@@ -37,8 +37,9 @@ def bind(project):
 def prepare(a):
     import numpy as np
     t=bind(a.project); values,marks,info=t.load_data(a.project,'ETTh1')
+    from dataset import labels as oracle_labels
     starts=np.arange(11008,13825,dtype=np.int64)
-    computed=np.array([t.labels(values[s:s+512],values[s+512:s+576]) for s in starts])
+    computed=np.array([oracle_labels(values[s:s+512],values[s+512:s+576]) for s in starts])
     truth={l:computed[:,i,:] for i,l in enumerate(('l1','l2'))}
     refs={}
     for m in METHODS:
