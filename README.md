@@ -1,5 +1,16 @@
 # LLM-TS
 
+## 未来方向标签辅助预测研究分支
+
+本分支用于从oracle方向标签走向历史输入可预测标签。先读
+[简版计划](research/direction_conditioning/PLAN.md)、
+[历史口径](benchmarks/oracle_v1/protocol.md)与
+[归档状态](benchmarks/oracle_v1/provenance/README.md)。
+固定输入为历史时间序列，输出为逐变量-1/0/+1；新标签阈值可配置，
+历史±0.5结果不改写。本次未启动训练或API调用，未完成远端完整归档。
+已有[MD报告](reports/oracle_v1/report.md)与[单文件HTML报告](reports/oracle_v1/report.html)。
+
+
 LLM-TS is a shared benchmark repository for comparing time-series forecasting
 methods under one data and evaluation contract. Method implementations live in
 `methods/`; datasets, checkpoints, large artifacts, and full run directories do
