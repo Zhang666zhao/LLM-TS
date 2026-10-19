@@ -55,7 +55,10 @@ def prepare(a,t):
     (a.run/'data_version.txt').write_text(info['source_sha256']+'\n')
     t.dump(a.run/'label_contract.json',dict(passed=True,windows=13699,variables=7,hashes=hashes,
            numeric_scaler='original full training scaler',LLM_evidence_scaler='causal prefix during train'))
-    t.dump(a.run/'source_snapshot.json',dict(historical=PINNED,
+    revision=os.environ['DOWNSTREAM_CODE_REVISION']
+    assert len(revision)==40
+    (a.run/'git_commit.txt').write_text(revision+'\n')
+    t.dump(a.run/'source_snapshot.json',dict(code_revision=revision,historical=PINNED,
         downstream={p.name:t.sha(p) for p in ROOT.glob('*.py')}))
     snapshot=a.run/'code_snapshot'; snapshot.mkdir()
     for path in ROOT.glob('*'):
