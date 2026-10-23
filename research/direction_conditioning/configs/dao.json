@@ -1,0 +1,19 @@
+{
+  "adapter": "chat_completions",
+  "base_url": "https://tokenservice-gateway-ys.intra.xiaojukeji.com/v1",
+  "api_key_env": "TOKEN_SERVICE_API_KEY",
+  "model": "tencent/DeepSeek-V4-Flash",
+  "timeout_seconds": 120,
+  "max_tokens": 2048,
+  "temperature": 0,
+  "label": {
+    "version": "direction-l1-l2-tau05-v1",
+    "horizon": 64,
+    "recent": 64,
+    "lower": -0.5,
+    "upper": 0.5,
+    "epsilon": 0.001
+  },
+  "include_stats": true,
+  "include_semantics": false
+}

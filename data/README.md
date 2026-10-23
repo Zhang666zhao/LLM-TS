@@ -1,5 +1,9 @@
 # Data contract
 
+For the ETTh1 direction-conditioning research branch, see
+[data access and historical replay](RESEARCH_DATA.md), including the pinned
+download command and the distinction between public and frozen data hashes.
+
 No datasets are stored in this repository. `manifests/` contains only dataset
 identity, split, shape, and provenance metadata needed to prove that methods
 were evaluated on the same benchmark.

@@ -1,0 +1,16 @@
+research_goal: Fixed ETTh1 noisy-oracle test-label sensitivity;80 inference evaluations at60/70/80/90percent accuracy;reuse20 original100percent oracle results;no training/API/search
+official_benchmark:
+  data: baseline_raw_v1 ETTh1 sha256 3dbe45a7a25cbf0eb6d82cb84ef4487ea2b73a9341e5ff0d082e340b9d943f1d
+  split: original train targets512..8576, val8640..11456, test11520..14336;original full training numerical scaler
+  label: L1 L2 standardized history std ddof0 epsilon0.001 lower-0.5 upper0.5 context512 horizon64
+  primary_metric: all-variable test MSE;separate A-L1 A-L2 B-L1 B-L2;five-model equal-weight mean at each accuracy;frozen old checkpoint
+  metric_direction: min
+benchmark_baseline_commit: dbea4ff
+approval_owner: user
+editable:
+  - research/direction_conditioning/**
+immutable:
+  - benchmarks/oracle_v1/source_copies/**
+  - benchmarks/oracle_v1/results/**
+review_required:
+benchmark_versioned:
