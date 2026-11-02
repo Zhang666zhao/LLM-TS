@@ -1,0 +1,21 @@
+{
+  "start_epoch": 1792024501.7959325,
+  "deadline_epoch": 1792060501.7959325,
+  "max_seconds": 36000,
+  "gpus": [
+    0,
+    1
+  ],
+  "datasets": [
+    "ETTh1",
+    "ETTh2",
+    "ETTm1",
+    "ETTm2",
+    "weather"
+  ],
+  "max_new_jobs": 66,
+  "prior_completed": 109,
+  "total_target": 175,
+  "automatic_retries": false,
+  "monitor_seconds": 600
+}

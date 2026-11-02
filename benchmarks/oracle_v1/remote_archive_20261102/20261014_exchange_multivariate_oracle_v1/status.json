@@ -1,0 +1,183 @@
+{
+  "status": "complete",
+  "error": null,
+  "phase": "oracle_and_controls",
+  "finished": [
+    {
+      "job": "dlinear_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "dlinear_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_A_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_A_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "dlinear_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_A_l1",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_A_l1",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "dlinear_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_A_l2",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_A_l2",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "dlinear_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_B_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_B_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "dlinear_B_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_B_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_B_l1",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_B_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_B_l1",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "dlinear_B_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "itransformer_B_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "patchtst_B_l2",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "job": "frets_B_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "job": "fredf_B_l2",
+      "gpu": 1,
+      "returncode": 0
+    }
+  ],
+  "elapsed_seconds": 1843.7476921081543
+}

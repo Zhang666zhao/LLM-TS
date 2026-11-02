@@ -1,0 +1,5 @@
+{"time": 1790432606.9587984, "status": "running", "stage": "test", "dataset": "electricity", "batch": 0, "samples": 16}
+{"time": 1790432652.5426178, "status": "running", "stage": "test", "dataset": "electricity", "batch": 100, "samples": 1616}
+{"time": 1790432667.028306, "status": "running", "stage": "test", "dataset": "electricity", "batch": 200, "samples": 3216}
+{"time": 1790432681.6004825, "status": "running", "stage": "test", "dataset": "electricity", "batch": 300, "samples": 4816}
+{"time": 1790432685.792337, "status": "complete", "stage": "finished", "seconds": 112.91893172264099}

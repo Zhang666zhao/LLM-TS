@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20260926_baselines_ctx512_pred64/jobs/patchtst_electricity/attempt01",
+    "time": 1790432556.457436,
+    "status": "stopped",
+    "stage": "error",
+    "error": "InterruptedError('TERM requested; preserving diagnostic checkpoint')",
+    "disposition": "user_authorized_early_stop_evaluated_in_attempt02"
+  }
+]

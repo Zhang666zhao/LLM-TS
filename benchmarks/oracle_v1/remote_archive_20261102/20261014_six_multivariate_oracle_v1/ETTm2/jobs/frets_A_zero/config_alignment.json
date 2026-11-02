@@ -1,0 +1,108 @@
+{
+  "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20260926_baselines_ctx512_pred64/jobs/frets_ETTm2/attempt01/config.json",
+  "source_sha256": "8abb5b61e96440b564628f3c67e7d26215228ae7de9f36d40cec035ed767d716",
+  "original_config": {
+    "method": "frets",
+    "dataset": "ETTm2",
+    "seq_len": 512,
+    "pred_len": 64,
+    "seed": 2021,
+    "epochs": 10,
+    "patience": 3,
+    "batch": 16,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "clip": null,
+    "scheduler": "type1",
+    "precision": "float32",
+    "validation": "future64_macro_dataset_mse",
+    "d_model": 512,
+    "d_ff": 2048,
+    "e_layers": 2,
+    "n_heads": 8,
+    "dropout": 0.1,
+    "factor": 1,
+    "embed": "timeF",
+    "freq": "h",
+    "activation": "gelu",
+    "output_attention": false,
+    "use_norm": true,
+    "class_strategy": "projection",
+    "notes": [
+      "Enable original paper channel learner using string 1, matching official model conditional; CLI int/string mismatch documented, source untouched."
+    ],
+    "channel_independence": "1",
+    "project": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+    "smoke": false,
+    "batch_divisor": 1,
+    "enc_in": 7,
+    "batch_by_dataset": {
+      "ETTm2": 16
+    },
+    "effective_train_batch_by_dataset": {
+      "ETTm2": 16
+    },
+    "parameters": 16860096,
+    "trainable_parameters": 16860096
+  },
+  "resolved_training_config": {
+    "method": "frets",
+    "dataset": "ETTm2",
+    "seq_len": 512,
+    "pred_len": 64,
+    "seed": 2021,
+    "epochs": 10,
+    "patience": 3,
+    "batch": 16,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "clip": null,
+    "scheduler": "type1",
+    "precision": "float32",
+    "validation": "future64_macro_dataset_mse",
+    "d_model": 512,
+    "d_ff": 2048,
+    "e_layers": 2,
+    "n_heads": 8,
+    "dropout": 0.1,
+    "factor": 1,
+    "embed": "timeF",
+    "freq": "h",
+    "activation": "gelu",
+    "output_attention": false,
+    "use_norm": true,
+    "class_strategy": "projection",
+    "notes": [
+      "Enable original paper channel learner using string 1, matching official model conditional; CLI int/string mismatch documented, source untouched."
+    ],
+    "channel_independence": "1",
+    "project": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+    "smoke": false,
+    "batch_divisor": 1,
+    "enc_in": 7,
+    "batch_by_dataset": {
+      "ETTm2": 16
+    },
+    "effective_train_batch_by_dataset": {
+      "ETTm2": 16
+    },
+    "parameters": 16860096,
+    "trainable_parameters": 16860096,
+    "workers": 0
+  },
+  "loader": {
+    "pin_memory": true,
+    "workers": 0,
+    "independent_split_generators": true,
+    "shuffle_train": true,
+    "drop_last_train": true,
+    "drop_last_eval": false,
+    "seed": 2021
+  },
+  "deliberate_differences": [],
+  "old_selection": "all-variable-validation-MSE",
+  "new_selection": "all-variable-validation-MSE",
+  "claim": "multivariate training config restored",
+  "initial_parameter_sha256": "87e6469673956f3bc61efef604920599108c257d91dbaf5b324af2396d1ba1f4",
+  "historical_initial_verified": true
+}

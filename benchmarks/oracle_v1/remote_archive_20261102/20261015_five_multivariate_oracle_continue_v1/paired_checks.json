@@ -1,0 +1,402 @@
+[
+  {
+    "dataset": "ETTh1",
+    "method": "dlinear",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "dlinear",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "patchtst",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 100
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "patchtst",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 100
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "itransformer",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "itransformer",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "frets",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "frets",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "fredf",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTh1",
+    "method": "fredf",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "dlinear",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "dlinear",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 7
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "patchtst",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 100
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "patchtst",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 100
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "itransformer",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 7
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "itransformer",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "frets",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "frets",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "fredf",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTh2",
+    "method": "fredf",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "dlinear",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 9
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "dlinear",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 7
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "patchtst",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 23
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "patchtst",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 21
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "itransformer",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "itransformer",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "frets",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 8
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "frets",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "fredf",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTm1",
+    "method": "fredf",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "dlinear",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "dlinear",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "patchtst",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 22
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "patchtst",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 22
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "itransformer",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "itransformer",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "frets",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "frets",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 7
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "fredf",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 8
+  },
+  {
+    "dataset": "ETTm2",
+    "method": "fredf",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "dataset": "weather",
+    "method": "dlinear",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 7
+  },
+  {
+    "dataset": "weather",
+    "method": "dlinear",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  },
+  {
+    "dataset": "weather",
+    "method": "patchtst",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 23
+  },
+  {
+    "dataset": "weather",
+    "method": "patchtst",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 34
+  },
+  {
+    "dataset": "weather",
+    "method": "itransformer",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "weather",
+    "method": "itransformer",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "dataset": "weather",
+    "method": "frets",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  },
+  {
+    "dataset": "weather",
+    "method": "frets",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  },
+  {
+    "dataset": "weather",
+    "method": "fredf",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "dataset": "weather",
+    "method": "fredf",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  }
+]

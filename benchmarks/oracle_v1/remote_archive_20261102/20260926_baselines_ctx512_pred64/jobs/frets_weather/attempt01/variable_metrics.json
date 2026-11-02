@@ -1,0 +1,128 @@
+[
+  {
+    "variable": "p (mbar)",
+    "feature_id": 0,
+    "mse": 0.12083025613946118,
+    "mae": 0.23264649906416085
+  },
+  {
+    "variable": "T (degC)",
+    "feature_id": 1,
+    "mse": 0.06500183653609089,
+    "mae": 0.19228505871400395
+  },
+  {
+    "variable": "Tpot (K)",
+    "feature_id": 2,
+    "mse": 0.0665468914188765,
+    "mae": 0.1898402465146698
+  },
+  {
+    "variable": "Tdew (degC)",
+    "feature_id": 3,
+    "mse": 0.0651201126339579,
+    "mae": 0.18924736395352154
+  },
+  {
+    "variable": "rh (%)",
+    "feature_id": 4,
+    "mse": 0.1897986889726688,
+    "mae": 0.3268691800431102
+  },
+  {
+    "variable": "VPmax (mbar)",
+    "feature_id": 5,
+    "mse": 0.031671394452534786,
+    "mae": 0.1314553439723816
+  },
+  {
+    "variable": "VPact (mbar)",
+    "feature_id": 6,
+    "mse": 0.05089541254981831,
+    "mae": 0.164023988161633
+  },
+  {
+    "variable": "VPdef (mbar)",
+    "feature_id": 7,
+    "mse": 0.03438894641362012,
+    "mae": 0.1335617877861472
+  },
+  {
+    "variable": "sh (g/kg)",
+    "feature_id": 8,
+    "mse": 0.05093870544669844,
+    "mae": 0.16394583246846653
+  },
+  {
+    "variable": "H2OC (mmol/mol)",
+    "feature_id": 9,
+    "mse": 0.050304156014000644,
+    "mae": 0.16225285388787541
+  },
+  {
+    "variable": "rho (g/m**3)",
+    "feature_id": 10,
+    "mse": 0.07556338817128412,
+    "mae": 0.19742074561166284
+  },
+  {
+    "variable": "wv (m/s)",
+    "feature_id": 11,
+    "mse": 0.0019661418452750854,
+    "mae": 0.03825526899416018
+  },
+  {
+    "variable": "max. wv (m/s)",
+    "feature_id": 12,
+    "mse": 0.41036003687697636,
+    "mae": 0.47437031900634985
+  },
+  {
+    "variable": "wd (deg)",
+    "feature_id": 13,
+    "mse": 0.3812696262191388,
+    "mae": 0.3974882401958055
+  },
+  {
+    "variable": "rain (mm)",
+    "feature_id": 14,
+    "mse": 0.05883875231514164,
+    "mae": 0.08259364137259266
+  },
+  {
+    "variable": "raining (s)",
+    "feature_id": 15,
+    "mse": 1.0324970783259935,
+    "mae": 0.4153242069558328
+  },
+  {
+    "variable": "SWDR (W/m\ufffd)",
+    "feature_id": 16,
+    "mse": 0.04872687504862108,
+    "mae": 0.1502935812241514
+  },
+  {
+    "variable": "PAR (\ufffdmol/m\ufffd/s)",
+    "feature_id": 17,
+    "mse": 0.044390835339165456,
+    "mae": 0.14497569640578348
+  },
+  {
+    "variable": "max. PAR (\ufffdmol/m\ufffd/s)",
+    "feature_id": 18,
+    "mse": 0.03492116343976663,
+    "mae": 0.12883720077225794
+  },
+  {
+    "variable": "Tlog (degC)",
+    "feature_id": 19,
+    "mse": 0.05928815126861354,
+    "mae": 0.18725570141278347
+  },
+  {
+    "variable": "OT",
+    "feature_id": 20,
+    "mse": 0.0018727077118073662,
+    "mae": 0.034963368077156796
+  }
+]

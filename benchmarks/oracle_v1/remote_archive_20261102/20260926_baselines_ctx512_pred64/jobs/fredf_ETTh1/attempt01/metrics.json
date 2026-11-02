@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "method": "fredf",
+  "dataset": "ETTh1",
+  "mse": 0.3639470078185843,
+  "mae": 0.3944919477199764,
+  "windows": 2817,
+  "variables": 7,
+  "horizon": 64,
+  "eval_seconds": 0.8136773258447647,
+  "peak_gpu_bytes": 173826048,
+  "data_sha256": "3dbe45a7a25cbf0eb6d82cb84ef4487ea2b73a9341e5ff0d082e340b9d943f1d",
+  "config": {
+    "method": "fredf",
+    "dataset": "ETTh1",
+    "seq_len": 512,
+    "pred_len": 64,
+    "seed": 2021,
+    "epochs": 10,
+    "patience": 3,
+    "batch": 32,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "clip": null,
+    "scheduler": "type1",
+    "precision": "float32",
+    "validation": "future64_macro_dataset_mse",
+    "d_model": 256,
+    "d_ff": 256,
+    "e_layers": 2,
+    "n_heads": 8,
+    "dropout": 0.1,
+    "factor": 1,
+    "embed": "timeF",
+    "freq": "h",
+    "activation": "gelu",
+    "output_attention": false,
+    "use_norm": true,
+    "class_strategy": "projection",
+    "notes": [
+      "Same iTransformer initialization/config as MSE control; official FreDF dataset loss weights; Exchange uses predeclared .1/.9 since no official Exchange script."
+    ],
+    "source_config": "sources/iTransformer/scripts/multivariate_forecasting/ETT/iTransformer_ETTh1.sh",
+    "rec_lambda": 0.2,
+    "auxi_lambda": 0.8,
+    "auxi_mode": "rfft",
+    "auxi_loss": "complex_abs_mean",
+    "project": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+    "smoke": false,
+    "batch_divisor": 1,
+    "enc_in": 7,
+    "batch_by_dataset": {
+      "ETTh1": 32
+    },
+    "effective_train_batch_by_dataset": {
+      "ETTh1": 32
+    },
+    "parameters": 939840,
+    "trainable_parameters": 939840
+  },
+  "git_commit": "0c47241d05acdd971d3fd3c59169ece56d2b6380"
+}

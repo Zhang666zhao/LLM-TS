@@ -1,0 +1,72 @@
+[
+  {
+    "method": "dlinear",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "method": "dlinear",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 5
+  },
+  {
+    "method": "patchtst",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 100
+  },
+  {
+    "method": "patchtst",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 100
+  },
+  {
+    "method": "itransformer",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  },
+  {
+    "method": "itransformer",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "method": "frets",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "method": "frets",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 4
+  },
+  {
+    "method": "fredf",
+    "strategy": "A",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 10
+  },
+  {
+    "method": "fredf",
+    "strategy": "B",
+    "initialization_match": true,
+    "common_epoch_orders_match": true,
+    "common_epochs": 6
+  }
+]

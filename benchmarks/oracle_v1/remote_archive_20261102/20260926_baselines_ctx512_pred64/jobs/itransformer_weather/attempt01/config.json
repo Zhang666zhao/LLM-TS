@@ -1,0 +1,43 @@
+{
+  "method": "itransformer",
+  "dataset": "weather",
+  "seq_len": 512,
+  "pred_len": 64,
+  "seed": 2021,
+  "epochs": 10,
+  "patience": 3,
+  "batch": 32,
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "clip": null,
+  "scheduler": "type1",
+  "precision": "float32",
+  "validation": "future64_macro_dataset_mse",
+  "d_model": 512,
+  "d_ff": 512,
+  "e_layers": 3,
+  "n_heads": 8,
+  "dropout": 0.1,
+  "factor": 1,
+  "embed": "timeF",
+  "freq": "h",
+  "activation": "gelu",
+  "output_attention": false,
+  "use_norm": true,
+  "class_strategy": "projection",
+  "notes": [],
+  "source_config": "sources/iTransformer/scripts/multivariate_forecasting/Weather/iTransformer.sh",
+  "rec_lambda": 0.4,
+  "project": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+  "smoke": false,
+  "batch_divisor": 1,
+  "enc_in": 21,
+  "batch_by_dataset": {
+    "weather": 32
+  },
+  "effective_train_batch_by_dataset": {
+    "weather": 32
+  },
+  "parameters": 5030464,
+  "trainable_parameters": 5030464
+}

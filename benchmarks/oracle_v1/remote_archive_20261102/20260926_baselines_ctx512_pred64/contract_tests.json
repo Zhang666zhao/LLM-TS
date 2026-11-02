@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "dataset_checks": {
+    "weather": {
+      "test_windows": 10476,
+      "variables": 21,
+      "label_check": "first/middle/last exact"
+    },
+    "ETTh1": {
+      "test_windows": 2817,
+      "variables": 7,
+      "label_check": "first/middle/last exact"
+    },
+    "ETTh2": {
+      "test_windows": 2817,
+      "variables": 7,
+      "label_check": "first/middle/last exact"
+    },
+    "ETTm1": {
+      "test_windows": 11457,
+      "variables": 7,
+      "label_check": "first/middle/last exact"
+    },
+    "ETTm2": {
+      "test_windows": 11457,
+      "variables": 7,
+      "label_check": "first/middle/last exact"
+    },
+    "exchange_rate": {
+      "test_windows": 1454,
+      "variables": 8,
+      "label_check": "first/middle/last exact"
+    },
+    "electricity": {
+      "test_windows": 5197,
+      "variables": 321,
+      "label_check": "first/middle/last exact"
+    }
+  },
+  "spectral_phase_check": true,
+  "process_group_term": true
+}

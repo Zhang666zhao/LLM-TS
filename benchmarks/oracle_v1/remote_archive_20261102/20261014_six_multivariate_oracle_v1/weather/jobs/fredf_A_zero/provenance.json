@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/research/multivariate_oracle_six/train.py",
+    "--project",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+    "--dataset",
+    "weather",
+    "--cache",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/labels",
+    "--output",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/fredf_A_zero",
+    "--method",
+    "fredf",
+    "--strategy",
+    "A",
+    "--label",
+    "zero",
+    "--deadline",
+    "1792024241.1568234"
+  ],
+  "commit": "ad69667428a419212e8e38fd79eaf4893562b8a0",
+  "source_sha256": {
+    "alignment.py": "e5fd77c9973d40e7d9ecf4d1a47421cc22fd625ec38cb69e89cc9737ec1f4d31",
+    "check_contract.py": "32c0c84a2e09b7e749fd3d7189945e3f2d228612ddd799ab8e5bee538a2c5af3",
+    "conditioning.py": "c6699bfcc01b92bcdad08c85734e7e5325449c08f88bc74a19a4cba9a5240f8c",
+    "dataset.py": "fa89534f8e9439b8cb145628288028b6b117ba6f796c9df384fee77db4f4f826",
+    "launch.py": "97597844fb265ab909fcd7c563a27593c62736944dcfdbbffbafb6b41dcf6955",
+    "preflight.py": "7fb058a4cf57e216469558c4392a0aebb6b885e2bf76bb63ba05905bec59e6b3",
+    "train.py": "a75ea99c11592a7fd70ba7fe4135b4de2a55b7e32a2629eb9a6fdfbe24acf95c"
+  },
+  "torch": "2.0.1+cu117",
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]"
+}

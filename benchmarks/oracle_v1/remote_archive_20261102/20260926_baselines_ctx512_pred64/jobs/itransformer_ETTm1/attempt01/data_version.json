@@ -1,0 +1,22 @@
+{
+  "ETTm1": {
+    "sha256": "98b2af6d8ea4a3a5a43bb169377b0d0ee61b0b52c82024ee142c1c349cc864e9",
+    "splits": {
+      "train_start": 0,
+      "train_end": 34560,
+      "val_start": 34048,
+      "val_end": 46080,
+      "test_start": 45568,
+      "test_end": 57600
+    },
+    "variables": [
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL",
+      "OT"
+    ]
+  }
+}

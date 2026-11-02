@@ -1,0 +1,1267 @@
+{
+  "status": "failed",
+  "error": "TimeoutError('Shared10h deadline/stop reached')",
+  "finished": [
+    {
+      "dataset": "ETTh1",
+      "job": "dlinear_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "dlinear_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "dlinear_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "dlinear_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "dlinear_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "electricity",
+      "job": "dlinear_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "patchtst_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "patchtst_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "patchtst_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "patchtst_base_zero",
+      "gpu": 1,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "patchtst_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "electricity",
+      "job": "itransformer_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "frets_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "frets_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "frets_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "frets_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "frets_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "fredf_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "fredf_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "fredf_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "fredf_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "fredf_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "electricity",
+      "job": "fredf_base_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "dlinear_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "dlinear_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "dlinear_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "dlinear_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "dlinear_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "patchtst_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "patchtst_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "patchtst_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "patchtst_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "patchtst_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "itransformer_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "itransformer_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "itransformer_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "itransformer_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "itransformer_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "frets_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "frets_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "frets_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "frets_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "frets_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "fredf_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "fredf_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "fredf_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "fredf_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "fredf_A_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "dlinear_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "dlinear_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "dlinear_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "dlinear_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "dlinear_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "patchtst_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "patchtst_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "patchtst_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "patchtst_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "patchtst_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "itransformer_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "itransformer_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "itransformer_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "itransformer_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "itransformer_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "frets_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "frets_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "frets_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "frets_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "frets_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "fredf_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "fredf_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "fredf_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "fredf_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "fredf_A_l1",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "dlinear_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "dlinear_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "dlinear_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "dlinear_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "dlinear_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "patchtst_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "patchtst_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "patchtst_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "patchtst_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "patchtst_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "itransformer_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "itransformer_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "itransformer_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "itransformer_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "itransformer_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "frets_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "frets_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "frets_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "frets_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "frets_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "fredf_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "fredf_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "fredf_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "fredf_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "fredf_A_l2",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "dlinear_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "dlinear_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "dlinear_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "dlinear_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "weather",
+      "job": "dlinear_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh1",
+      "job": "patchtst_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTh2",
+      "job": "patchtst_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm1",
+      "job": "patchtst_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    },
+    {
+      "dataset": "ETTm2",
+      "job": "patchtst_B_zero",
+      "gpu": 0,
+      "returncode": 0
+    }
+  ],
+  "pending": [
+    [
+      "electricity",
+      "frets",
+      "base",
+      "zero"
+    ],
+    [
+      "electricity",
+      "dlinear",
+      "A",
+      "zero"
+    ],
+    [
+      "electricity",
+      "patchtst",
+      "A",
+      "zero"
+    ],
+    [
+      "electricity",
+      "itransformer",
+      "A",
+      "zero"
+    ],
+    [
+      "electricity",
+      "frets",
+      "A",
+      "zero"
+    ],
+    [
+      "electricity",
+      "fredf",
+      "A",
+      "zero"
+    ],
+    [
+      "electricity",
+      "dlinear",
+      "A",
+      "l1"
+    ],
+    [
+      "electricity",
+      "patchtst",
+      "A",
+      "l1"
+    ],
+    [
+      "electricity",
+      "itransformer",
+      "A",
+      "l1"
+    ],
+    [
+      "electricity",
+      "frets",
+      "A",
+      "l1"
+    ],
+    [
+      "electricity",
+      "fredf",
+      "A",
+      "l1"
+    ],
+    [
+      "electricity",
+      "dlinear",
+      "A",
+      "l2"
+    ],
+    [
+      "electricity",
+      "patchtst",
+      "A",
+      "l2"
+    ],
+    [
+      "electricity",
+      "itransformer",
+      "A",
+      "l2"
+    ],
+    [
+      "electricity",
+      "frets",
+      "A",
+      "l2"
+    ],
+    [
+      "electricity",
+      "fredf",
+      "A",
+      "l2"
+    ],
+    [
+      "electricity",
+      "dlinear",
+      "B",
+      "zero"
+    ],
+    [
+      "electricity",
+      "patchtst",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh1",
+      "itransformer",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh2",
+      "itransformer",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTm1",
+      "itransformer",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTm2",
+      "itransformer",
+      "B",
+      "zero"
+    ],
+    [
+      "weather",
+      "itransformer",
+      "B",
+      "zero"
+    ],
+    [
+      "electricity",
+      "itransformer",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh1",
+      "frets",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh2",
+      "frets",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTm1",
+      "frets",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTm2",
+      "frets",
+      "B",
+      "zero"
+    ],
+    [
+      "weather",
+      "frets",
+      "B",
+      "zero"
+    ],
+    [
+      "electricity",
+      "frets",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh1",
+      "fredf",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh2",
+      "fredf",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTm1",
+      "fredf",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTm2",
+      "fredf",
+      "B",
+      "zero"
+    ],
+    [
+      "weather",
+      "fredf",
+      "B",
+      "zero"
+    ],
+    [
+      "electricity",
+      "fredf",
+      "B",
+      "zero"
+    ],
+    [
+      "ETTh1",
+      "dlinear",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh2",
+      "dlinear",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm1",
+      "dlinear",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm2",
+      "dlinear",
+      "B",
+      "l1"
+    ],
+    [
+      "weather",
+      "dlinear",
+      "B",
+      "l1"
+    ],
+    [
+      "electricity",
+      "dlinear",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh1",
+      "patchtst",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh2",
+      "patchtst",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm1",
+      "patchtst",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm2",
+      "patchtst",
+      "B",
+      "l1"
+    ],
+    [
+      "weather",
+      "patchtst",
+      "B",
+      "l1"
+    ],
+    [
+      "electricity",
+      "patchtst",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh1",
+      "itransformer",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh2",
+      "itransformer",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm1",
+      "itransformer",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm2",
+      "itransformer",
+      "B",
+      "l1"
+    ],
+    [
+      "weather",
+      "itransformer",
+      "B",
+      "l1"
+    ],
+    [
+      "electricity",
+      "itransformer",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh1",
+      "frets",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh2",
+      "frets",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm1",
+      "frets",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm2",
+      "frets",
+      "B",
+      "l1"
+    ],
+    [
+      "weather",
+      "frets",
+      "B",
+      "l1"
+    ],
+    [
+      "electricity",
+      "frets",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh1",
+      "fredf",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh2",
+      "fredf",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm1",
+      "fredf",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTm2",
+      "fredf",
+      "B",
+      "l1"
+    ],
+    [
+      "weather",
+      "fredf",
+      "B",
+      "l1"
+    ],
+    [
+      "electricity",
+      "fredf",
+      "B",
+      "l1"
+    ],
+    [
+      "ETTh1",
+      "dlinear",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh2",
+      "dlinear",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm1",
+      "dlinear",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm2",
+      "dlinear",
+      "B",
+      "l2"
+    ],
+    [
+      "weather",
+      "dlinear",
+      "B",
+      "l2"
+    ],
+    [
+      "electricity",
+      "dlinear",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh1",
+      "patchtst",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh2",
+      "patchtst",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm1",
+      "patchtst",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm2",
+      "patchtst",
+      "B",
+      "l2"
+    ],
+    [
+      "weather",
+      "patchtst",
+      "B",
+      "l2"
+    ],
+    [
+      "electricity",
+      "patchtst",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh1",
+      "itransformer",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh2",
+      "itransformer",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm1",
+      "itransformer",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm2",
+      "itransformer",
+      "B",
+      "l2"
+    ],
+    [
+      "weather",
+      "itransformer",
+      "B",
+      "l2"
+    ],
+    [
+      "electricity",
+      "itransformer",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh1",
+      "frets",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh2",
+      "frets",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm1",
+      "frets",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm2",
+      "frets",
+      "B",
+      "l2"
+    ],
+    [
+      "weather",
+      "frets",
+      "B",
+      "l2"
+    ],
+    [
+      "electricity",
+      "frets",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh1",
+      "fredf",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTh2",
+      "fredf",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm1",
+      "fredf",
+      "B",
+      "l2"
+    ],
+    [
+      "ETTm2",
+      "fredf",
+      "B",
+      "l2"
+    ],
+    [
+      "weather",
+      "fredf",
+      "B",
+      "l2"
+    ],
+    [
+      "electricity",
+      "fredf",
+      "B",
+      "l2"
+    ]
+  ],
+  "interrupted": [
+    {
+      "dataset": "electricity",
+      "job": "patchtst_base_zero"
+    },
+    {
+      "dataset": "weather",
+      "job": "patchtst_B_zero"
+    }
+  ],
+  "elapsed_seconds": 35941.87552046776
+}

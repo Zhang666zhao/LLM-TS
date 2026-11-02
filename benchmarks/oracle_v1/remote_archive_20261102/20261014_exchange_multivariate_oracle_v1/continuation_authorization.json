@@ -1,0 +1,9 @@
+{
+  "time": 1791986425.9784613,
+  "reason": "User explicitly accepted >1% baseline deviation and requested remaining20 oracle+10 controls",
+  "original_deadline": 1792021464.1896353,
+  "baseline_reruns": 0,
+  "model_code_unchanged": true,
+  "actual_rng": "CPU/backbone seed2021; wrapper resets CUDA RNG2022, retained for paired consistency",
+  "commit": "f665bd3dd28299999b989bfff75759cab6ba53ce"
+}

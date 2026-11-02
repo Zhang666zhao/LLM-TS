@@ -1,0 +1,23 @@
+{
+  "exchange_rate": {
+    "sha256": "1acd5bc2b53a46948848a13f7df36af5be81c0bc8d68e8e62918f2546a7fe583",
+    "splits": {
+      "train_start": 0,
+      "train_end": 5311,
+      "val_start": 4799,
+      "val_end": 6071,
+      "test_start": 5559,
+      "test_end": 7588
+    },
+    "variables": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "OT"
+    ]
+  }
+}

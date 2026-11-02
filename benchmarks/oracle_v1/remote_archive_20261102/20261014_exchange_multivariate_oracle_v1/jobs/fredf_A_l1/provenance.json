@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/research/multivariate_oracle_stage2/train.py",
+    "--project",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+    "--cache",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_exchange_multivariate_oracle_v1/labels",
+    "--output",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_exchange_multivariate_oracle_v1/jobs/fredf_A_l1",
+    "--method",
+    "fredf",
+    "--strategy",
+    "A",
+    "--label",
+    "l1",
+    "--deadline",
+    "1792021404.1896353"
+  ],
+  "commit": "f665bd3dd28299999b989bfff75759cab6ba53ce",
+  "source_sha256": {
+    "alignment.py": "2efc3dd48f8ab531f808f1ff6ed79fc7b3d199f11f99821526226f2c8786e5de",
+    "check_contract.py": "a4f269e854c0314a95f535e2802a7e5849bbe88dde8df9288ee1102ec1efa334",
+    "conditioning.py": "f77182abdf10e7f0265ef4b69aa0b56482d16af4bf13ab28aaa35dd28292779f",
+    "dataset.py": "85084afc1e6d92bac8c987f7bcdb13f1b283acb862e1f6096a86aa34a7a52ac0",
+    "launch.py": "98a4738cb474c87f45ba23e3b3a1d38ca5c6860c37edaf6119947b52b17af21e",
+    "preflight.py": "7fb058a4cf57e216469558c4392a0aebb6b885e2bf76bb63ba05905bec59e6b3",
+    "train.py": "03f08d54509b9db5e32f3a8d382411644b7ab7ce1b4e8935801f0b7ff84cea74"
+  },
+  "torch": "2.0.1+cu117",
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]"
+}

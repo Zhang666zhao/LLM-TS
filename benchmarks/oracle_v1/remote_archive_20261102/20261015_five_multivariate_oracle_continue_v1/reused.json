@@ -1,0 +1,547 @@
+[
+  {
+    "dataset": "ETTh1",
+    "job": "dlinear_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/dlinear_base_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "patchtst_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/patchtst_base_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "itransformer_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/itransformer_base_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "frets_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/frets_base_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "fredf_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/fredf_base_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "dlinear_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/dlinear_A_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "patchtst_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/patchtst_A_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "itransformer_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/itransformer_A_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "frets_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/frets_A_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "fredf_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/fredf_A_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "dlinear_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/dlinear_A_l1"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "patchtst_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/patchtst_A_l1"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "itransformer_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/itransformer_A_l1"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "frets_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/frets_A_l1"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "fredf_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/fredf_A_l1"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "dlinear_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/dlinear_A_l2"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "patchtst_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/patchtst_A_l2"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "itransformer_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/itransformer_A_l2"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "frets_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/frets_A_l2"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "fredf_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/fredf_A_l2"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "dlinear_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/dlinear_B_zero"
+  },
+  {
+    "dataset": "ETTh1",
+    "job": "patchtst_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh1/jobs/patchtst_B_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "dlinear_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/dlinear_base_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "patchtst_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/patchtst_base_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "itransformer_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/itransformer_base_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "frets_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/frets_base_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "fredf_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/fredf_base_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "dlinear_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/dlinear_A_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "patchtst_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/patchtst_A_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "itransformer_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/itransformer_A_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "frets_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/frets_A_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "fredf_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/fredf_A_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "dlinear_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/dlinear_A_l1"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "patchtst_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/patchtst_A_l1"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "itransformer_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/itransformer_A_l1"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "frets_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/frets_A_l1"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "fredf_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/fredf_A_l1"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "dlinear_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/dlinear_A_l2"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "patchtst_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/patchtst_A_l2"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "itransformer_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/itransformer_A_l2"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "frets_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/frets_A_l2"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "fredf_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/fredf_A_l2"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "dlinear_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/dlinear_B_zero"
+  },
+  {
+    "dataset": "ETTh2",
+    "job": "patchtst_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTh2/jobs/patchtst_B_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "dlinear_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/dlinear_base_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "patchtst_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/patchtst_base_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "itransformer_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/itransformer_base_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "frets_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/frets_base_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "fredf_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/fredf_base_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "dlinear_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/dlinear_A_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "patchtst_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/patchtst_A_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "itransformer_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/itransformer_A_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "frets_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/frets_A_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "fredf_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/fredf_A_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "dlinear_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/dlinear_A_l1"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "patchtst_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/patchtst_A_l1"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "itransformer_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/itransformer_A_l1"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "frets_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/frets_A_l1"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "fredf_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/fredf_A_l1"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "dlinear_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/dlinear_A_l2"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "patchtst_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/patchtst_A_l2"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "itransformer_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/itransformer_A_l2"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "frets_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/frets_A_l2"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "fredf_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/fredf_A_l2"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "dlinear_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/dlinear_B_zero"
+  },
+  {
+    "dataset": "ETTm1",
+    "job": "patchtst_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm1/jobs/patchtst_B_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "dlinear_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/dlinear_base_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "patchtst_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/patchtst_base_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "itransformer_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/itransformer_base_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "frets_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/frets_base_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "fredf_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/fredf_base_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "dlinear_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/dlinear_A_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "patchtst_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/patchtst_A_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "itransformer_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/itransformer_A_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "frets_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/frets_A_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "fredf_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/fredf_A_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "dlinear_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/dlinear_A_l1"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "patchtst_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/patchtst_A_l1"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "itransformer_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/itransformer_A_l1"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "frets_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/frets_A_l1"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "fredf_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/fredf_A_l1"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "dlinear_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/dlinear_A_l2"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "patchtst_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/patchtst_A_l2"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "itransformer_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/itransformer_A_l2"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "frets_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/frets_A_l2"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "fredf_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/fredf_A_l2"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "dlinear_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/dlinear_B_zero"
+  },
+  {
+    "dataset": "ETTm2",
+    "job": "patchtst_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/ETTm2/jobs/patchtst_B_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "dlinear_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/dlinear_base_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "patchtst_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/patchtst_base_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "itransformer_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/itransformer_base_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "frets_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/frets_base_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "fredf_base_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/fredf_base_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "dlinear_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/dlinear_A_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "patchtst_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/patchtst_A_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "itransformer_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/itransformer_A_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "frets_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/frets_A_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "fredf_A_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/fredf_A_zero"
+  },
+  {
+    "dataset": "weather",
+    "job": "dlinear_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/dlinear_A_l1"
+  },
+  {
+    "dataset": "weather",
+    "job": "patchtst_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/patchtst_A_l1"
+  },
+  {
+    "dataset": "weather",
+    "job": "itransformer_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/itransformer_A_l1"
+  },
+  {
+    "dataset": "weather",
+    "job": "frets_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/frets_A_l1"
+  },
+  {
+    "dataset": "weather",
+    "job": "fredf_A_l1",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/fredf_A_l1"
+  },
+  {
+    "dataset": "weather",
+    "job": "dlinear_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/dlinear_A_l2"
+  },
+  {
+    "dataset": "weather",
+    "job": "patchtst_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/patchtst_A_l2"
+  },
+  {
+    "dataset": "weather",
+    "job": "itransformer_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/itransformer_A_l2"
+  },
+  {
+    "dataset": "weather",
+    "job": "frets_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/frets_A_l2"
+  },
+  {
+    "dataset": "weather",
+    "job": "fredf_A_l2",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/fredf_A_l2"
+  },
+  {
+    "dataset": "weather",
+    "job": "dlinear_B_zero",
+    "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1/weather/jobs/dlinear_B_zero"
+  }
+]

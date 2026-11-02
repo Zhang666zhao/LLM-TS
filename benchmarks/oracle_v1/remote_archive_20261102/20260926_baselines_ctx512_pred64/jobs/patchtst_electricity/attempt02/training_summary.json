@@ -1,0 +1,9 @@
+{
+  "training_source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20260926_baselines_ctx512_pred64/jobs/patchtst_electricity/attempt01",
+  "selected_epoch": 56,
+  "completed_epochs": 64,
+  "last_logged_step": 71501,
+  "checkpoint_sha256": "eb88eec82c9af9a4546a72ec3ca937b4437fc5730cbdf2d5c44d8f194ea55567",
+  "training_performed": false,
+  "reason": "user_authorized_early_stop_after_cap_already_exceeded"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20260922_DLinear_shared_ctx512_pred64/ETTm1/config.json",
+  "source_sha256": "7f35a643c59dd892af6cbc7d2a2e2931f683e2bd4dea9ddef0c204bd12bc4b6c",
+  "original_config": {
+    "batch_size": 8,
+    "context": 512,
+    "data_root": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/artifacts/baseline_raw_v1",
+    "dataset": "ETTm1",
+    "epochs": 10,
+    "gpu": 0,
+    "horizon": 64,
+    "learning_rate": 0.0001,
+    "max_eval_batches": null,
+    "max_train_batches": null,
+    "official_repo": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/third_party/LTSF-Linear",
+    "output": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20260922_DLinear_shared_ctx512_pred64/ETTm1",
+    "patience": 3,
+    "seed": 2021,
+    "workers": 4
+  },
+  "resolved_training_config": {
+    "method": "dlinear",
+    "dataset": "ETTm1",
+    "seq_len": 512,
+    "pred_len": 64,
+    "individual": false,
+    "batch": 8,
+    "epochs": 10,
+    "patience": 3,
+    "lr": 0.0001,
+    "scheduler": "type1",
+    "weight_decay": 0.0,
+    "seed": 2021,
+    "workers": 4,
+    "clip": null
+  },
+  "loader": {
+    "pin_memory": true,
+    "workers": 4,
+    "independent_split_generators": true,
+    "shuffle_train": true,
+    "drop_last_train": true,
+    "drop_last_eval": false,
+    "seed": 2021
+  },
+  "deliberate_differences": [],
+  "old_selection": "all-variable-validation-MSE",
+  "new_selection": "all-variable-validation-MSE",
+  "claim": "multivariate training config restored",
+  "initial_parameter_sha256": "0483d79cf34f4e28e223ecdaae68f003358fc980649b49a20f91dce78e81e66a",
+  "historical_initial_verified": false,
+  "base_checkpoint_sha256": "e98a3254f4253d21b6aa2a3e371bdd77325153e17b71dd80eca2c4f5cd9859e9"
+}

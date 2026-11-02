@@ -1,0 +1,15 @@
+{
+  "start_epoch": 1791985464.1896353,
+  "deadline_epoch": 1792021464.1896353,
+  "max_seconds": 36000,
+  "gpus": [
+    0,
+    1
+  ],
+  "max_jobs": 35,
+  "dataset": "exchange_rate",
+  "scope": "multivariate oracle stage2 fixed matrix",
+  "monitor_seconds": 600,
+  "stop_on_failure": true,
+  "automatic_retries": false
+}

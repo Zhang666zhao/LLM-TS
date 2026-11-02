@@ -1,0 +1,16 @@
+{
+  "scope": "User authorized excluding Electricity, two A6000 GPUs, NEW 10h, unchanged configs",
+  "previous": "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1",
+  "interrupted_restart": "weather/patchtst_B_zero from seed; no full optimizer/RNG checkpoint",
+  "source_commit": "ad69667428a419212e8e38fd79eaf4893562b8a0",
+  "launcher_sha256": "70277ce5d7102ce838d00065e6acf048a656874f128a088ff35cb3015a424e0e",
+  "command": [
+    "research/multivariate_oracle_continue/launch.py",
+    "--project",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG",
+    "--previous",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261014_six_multivariate_oracle_v1",
+    "--output",
+    "/nfs/dataset-ofs-661-142656/qiminhao/Foundation_model/agentic_TS/TSRAG/runs/20261015_five_multivariate_oracle_continue_v1"
+  ]
+}

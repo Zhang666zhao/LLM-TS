@@ -1,0 +1,36 @@
+{
+  "weather": {
+    "sha256": "9b2b19b13e342d9c9b9c51620d42b4be232df7fba30e7f5c4968b7c79ab138ad",
+    "splits": {
+      "train_start": 0,
+      "train_end": 36887,
+      "val_start": 36375,
+      "val_end": 42157,
+      "test_start": 41645,
+      "test_end": 52696
+    },
+    "variables": [
+      "p (mbar)",
+      "T (degC)",
+      "Tpot (K)",
+      "Tdew (degC)",
+      "rh (%)",
+      "VPmax (mbar)",
+      "VPact (mbar)",
+      "VPdef (mbar)",
+      "sh (g/kg)",
+      "H2OC (mmol/mol)",
+      "rho (g/m**3)",
+      "wv (m/s)",
+      "max. wv (m/s)",
+      "wd (deg)",
+      "rain (mm)",
+      "raining (s)",
+      "SWDR (W/m\ufffd)",
+      "PAR (\ufffdmol/m\ufffd/s)",
+      "max. PAR (\ufffdmol/m\ufffd/s)",
+      "Tlog (degC)",
+      "OT"
+    ]
+  }
+}
