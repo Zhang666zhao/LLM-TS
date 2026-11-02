@@ -53,6 +53,12 @@ baseline/Oracle checkpoints and original trainer dependencies. These are not
 included in Git. Fresh API calls may produce different labels and cost money;
 they are NOT a substitute for replaying the frozen cache.
 
+2026-11-02 update: historical original-backbone and baseline/Oracle/zero
+checkpoints are distributed separately via GitHub Releases; see
+[weight downloads and hash verification](../benchmarks/oracle_v1/WEIGHTS.md).
+LLM labels, raw data and the later G2 LLM-conditioned weights are not in that
+release. Weights do not replace the matching architecture and data scaler.
+
 ## 3. Portability and credentials
 
 This branch archives the executed server research workflow, not a fully

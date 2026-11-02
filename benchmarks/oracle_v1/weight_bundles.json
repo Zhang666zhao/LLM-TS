@@ -1,0 +1,44 @@
+[
+  {
+    "name": "weights-ETTh1-20261102.tar",
+    "sha256": "6a0e774c6f10c411b92007238ce03513f945476e3faf29b680c62229d81dbd6c",
+    "bytes": 606627840,
+    "checkpoints": 40
+  },
+  {
+    "name": "weights-ETTh2-20261102.tar",
+    "sha256": "bd89f6cd9e70cbbb4c7f935b1564e96a321099457cfa847045e1607c44b33f03",
+    "bytes": 563875840,
+    "checkpoints": 40
+  },
+  {
+    "name": "weights-ETTm1-20261102.tar",
+    "sha256": "7ad0cff7d51702f60865d06d0df77251e6abdc0af481db458b82721e827bb506",
+    "bytes": 593838080,
+    "checkpoints": 40
+  },
+  {
+    "name": "weights-ETTm2-20261102.tar",
+    "sha256": "a91c2349cf7612fecf37e547bde05aab70ec46b9e8a07e54655a0ffcf2c0d2e9",
+    "bytes": 593838080,
+    "checkpoints": 40
+  },
+  {
+    "name": "weights-electricity-20261102.tar",
+    "sha256": "d271405bbee3f4b02657c45a07ecdca2587345ef95ec1c13e0d7a574cb8e0802",
+    "bytes": 111759360,
+    "checkpoints": 5
+  },
+  {
+    "name": "weights-exchange_rate-20261102.tar",
+    "sha256": "960e396df39c4550da5c92af8d24815540c863695321d39a149fa1916e5749b8",
+    "bytes": 563875840,
+    "checkpoints": 40
+  },
+  {
+    "name": "weights-weather-20261102.tar",
+    "sha256": "bcfd1ba28a733ab8d7838e3f572a09324d6bd764f6ba5a85da9edaa4fb212872",
+    "bytes": 898672640,
+    "checkpoints": 40
+  }
+]
