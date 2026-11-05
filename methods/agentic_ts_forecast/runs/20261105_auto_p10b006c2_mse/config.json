@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "run:20261105_cdfswap_both_mse": 0.85,
+    "run:20261105_prefixtree_cdf_d4_mse": 0.1,
+    "run:20261105_rotationseed_2024_mse": 0.05
+  },
+  "amplitude": 1,
+  "mean_shrink": 0,
+  "smooth": 1,
+  "proxy_bias_strength": 0.05,
+  "code_revision": "7f08cec465ebc2d663387f0c1dac5e381a7a6043",
+  "engine": "blend_sources_v1",
+  "runtime_llm": false
+}

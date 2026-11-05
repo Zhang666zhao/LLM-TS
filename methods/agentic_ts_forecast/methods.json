@@ -1,0 +1,72 @@
+[
+  {
+    "method": "M1",
+    "candidate": "20261105_columnselect_final0925_all_mse",
+    "engine": "column_selector_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_columnselect_final0925_all_mse/config.json"
+  },
+  {
+    "method": "M2",
+    "candidate": "20261105_compact_p19factsb001c3_mse",
+    "engine": "horizon_policy_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_compact_p19factsb001c3_mse/config.json"
+  },
+  {
+    "method": "M3",
+    "candidate": "20261105_blockcolumns_v0920_b16_mse",
+    "engine": "block_column_selector_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_blockcolumns_v0920_b16_mse/config.json"
+  },
+  {
+    "method": "M4",
+    "candidate": "20261105_compact_p19memoryb001c2_mse",
+    "engine": "horizon_policy_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_compact_p19memoryb001c2_mse/config.json"
+  },
+  {
+    "method": "M5",
+    "candidate": "20261105_compact_p19factsb001c2_mse",
+    "engine": "horizon_policy_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_compact_p19factsb001c2_mse/config.json"
+  },
+  {
+    "method": "M6",
+    "candidate": "20261105_blockcolumns_v0920_b32_mse",
+    "engine": "block_column_selector_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_blockcolumns_v0920_b32_mse/config.json"
+  },
+  {
+    "method": "M7",
+    "candidate": "20261105_compact_p19memoryb001c3_mse",
+    "engine": "horizon_policy_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_compact_p19memoryb001c3_mse/config.json"
+  },
+  {
+    "method": "M8",
+    "candidate": "20261105_blockcolumns_v0920_b64_mse",
+    "engine": "block_column_selector_v1",
+    "creation_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "config": "runs/20261105_blockcolumns_v0920_b64_mse/config.json"
+  },
+  {
+    "method": "M9",
+    "candidate": "20261105_columnselect_v0852_greedy3_mse",
+    "engine": "column_selector_v1",
+    "creation_revision": "6f947b0c76af0e624a3f5d2cb257cdf9eda96b94",
+    "config": "runs/20261105_columnselect_v0852_greedy3_mse/config.json"
+  },
+  {
+    "method": "M10",
+    "candidate": "20261105_compact_p18factsb003c2_mse",
+    "engine": "horizon_policy_v1",
+    "creation_revision": "6f947b0c76af0e624a3f5d2cb257cdf9eda96b94",
+    "config": "runs/20261105_compact_p18factsb003c2_mse/config.json"
+  }
+]

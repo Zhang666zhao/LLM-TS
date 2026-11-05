@@ -1,0 +1,60 @@
+{
+  "engine": "projected_composition_v1",
+  "operator": "column_selector_v1",
+  "operator_config": {
+    "engine": "column_selector_v1",
+    "column_source_indices": [
+      0,
+      1,
+      1,
+      1,
+      2,
+      3,
+      1
+    ],
+    "selected_by_variable": {
+      "HUFL": "20261105_compact_p20analogueb003c1_mse",
+      "HULL": "20261105_blockcolumns_v0920_b16_mse",
+      "MUFL": "20261105_blockcolumns_v0920_b16_mse",
+      "MULL": "20261105_blockcolumns_v0920_b16_mse",
+      "LUFL": "20261105_blockcolumns_v0920_b32_mse",
+      "LULL": "20261105_compact_p19factsb001c3_mse",
+      "OT": "20261105_blockcolumns_v0920_b16_mse"
+    },
+    "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/final0925/pool.json",
+    "selection_pool_sha256": "b4a8fdd8c04741228ebbd14fec1fb98f6fd1b8cd699988795e71d9906d20c00c",
+    "selection_mode": "all",
+    "pool_size": 531,
+    "runtime_llm": false,
+    "selection": "discrete per-variable validation selection; all fitting performed in existing training-only tools; no test access",
+    "code_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9"
+  },
+  "original_slots": 4,
+  "source_slots": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "source_ids": [
+    "run:20261105_projected_final0925_node9",
+    "run:20261105_projected_final0925_node29",
+    "run:20261105_projected_final0925_node32",
+    "run:20261105_projected_final0925_node37"
+  ],
+  "required_columns": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "compiled_from_config": "LLM_predict/runs/20261105_columnselect_final0925_all_mse/config.json",
+  "compiled_from_config_sha256": "8a04008fcdf7e4ad0a9a1f286e05f0eb9d5d89bd6f9a16b469eb55b2381a7083",
+  "runtime_llm": false,
+  "code_revision": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+  "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/final0925/pool.json",
+  "selection_pool_sha256": "b4a8fdd8c04741228ebbd14fec1fb98f6fd1b8cd699988795e71d9906d20c00c"
+}

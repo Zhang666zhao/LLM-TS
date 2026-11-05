@@ -1,0 +1,59 @@
+{
+  "contract": {
+    "dataset": "ETTm1",
+    "columns": [
+      "HUFL",
+      "HULL",
+      "MUFL",
+      "MULL",
+      "LUFL",
+      "LULL",
+      "OT"
+    ],
+    "minutes_per_step": 15,
+    "steps_per_day": 96,
+    "context": 512,
+    "horizon": 64,
+    "train_end": 34560,
+    "validation_end": 46080,
+    "test_end": 57600,
+    "stride": 1,
+    "sha256": "98b2af6d8ea4a3a5a43bb169377b0d0ee61b0b52c82024ee142c1c349cc864e9",
+    "variant": "ETTm1-portable-pool-v1",
+    "seed": 2021,
+    "fit_stride": 4,
+    "bank_stride": 16,
+    "analogue_policy": "old history only, bank row +64 <= query row -512",
+    "llm_calls": 2,
+    "proposals_per_call": 3
+  },
+  "mean": [
+    7.9900134819611495,
+    2.0387478002096975,
+    5.109928063464273,
+    0.7562241616995178,
+    2.80470208448802,
+    0.7911860229808587,
+    17.12495024489946
+  ],
+  "std": [
+    5.833092669188463,
+    2.0896456935494983,
+    5.519042716237835,
+    1.924161057906986,
+    1.0405540563013658,
+    0.6324420613667575,
+    9.17303527390826
+  ],
+  "device": "cuda:0",
+  "gpu": "NVIDIA RTX A6000",
+  "torch": "2.5.1+cu124",
+  "python": "3.12.9",
+  "source_sha256": "98b2af6d8ea4a3a5a43bb169377b0d0ee61b0b52c82024ee142c1c349cc864e9",
+  "dlinear_sha256": "e98a3254f4253d21b6aa2a3e371bdd77325153e17b71dd80eca2c4f5cd9859e9",
+  "state_sha256": "ddbe3635603d31bab27ec71a143d068a929f76609d2acc2e745e1c36111a5e7e",
+  "rows_seen": 34560,
+  "tree_steps": 180,
+  "bank_size": 2125,
+  "elapsed_s": 9.571017026901245
+}

@@ -1,0 +1,21 @@
+name: Agentic forecast public smoke
+on:
+  push:
+    branches: [agentic_ts_forecast]
+  pull_request:
+    branches: [agentic_ts_forecast]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy==2.0.2
+      - working-directory: methods/agentic_ts_forecast
+        run: python smoke.py

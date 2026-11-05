@@ -1,0 +1,54 @@
+{
+  "engine": "projected_composition_v1",
+  "operator": "column_selector_v1",
+  "operator_config": {
+    "engine": "column_selector_v1",
+    "column_source_indices": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    "selected_by_variable": {
+      "HUFL": "20261105_projected_p16_node19",
+      "HULL": "20261105_projected_p16_node19",
+      "MUFL": "20261105_horizon_p16statsb002c1_mse",
+      "MULL": "20261105_projected_p16_node19",
+      "LUFL": "20261105_horizon_p16statsb002c2_mse",
+      "LULL": "20261105_projected_p16_node19",
+      "OT": "20261105_projected_p16_node19"
+    },
+    "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/v0839/pool.json",
+    "selection_pool_sha256": "31271827179173871ea746af34b1c68bc7b945a293d616d2011afbca56792112",
+    "selection_mode": "all",
+    "pool_size": 470,
+    "runtime_llm": false,
+    "selection": "discrete per-variable validation selection; all fitting performed in existing training-only tools; no test access",
+    "code_revision": "12332f25d9d7e9bc51ecab73fd4ebdfc87f3462d"
+  },
+  "original_slots": 3,
+  "source_slots": [
+    0
+  ],
+  "source_ids": [
+    "run:20261105_projected_p16_node19"
+  ],
+  "required_columns": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+  ],
+  "compiled_from_config": "LLM_predict/runs/20261105_columnselect_v0839_all_mse/config.json",
+  "compiled_from_config_sha256": "021e66a17c3dfae4b1c3feb1cf89e63f3b1bc893aa5a08fb89ded80a9b1f113b",
+  "runtime_llm": false,
+  "code_revision": "6f947b0c76af0e624a3f5d2cb257cdf9eda96b94",
+  "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/v0839/pool.json",
+  "selection_pool_sha256": "31271827179173871ea746af34b1c68bc7b945a293d616d2011afbca56792112"
+}

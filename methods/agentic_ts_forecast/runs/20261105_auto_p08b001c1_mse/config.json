@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "run:20261105_specialist_combo_core_lora_calendar_mse": 0.8,
+    "run:20261105_viewpoint_full_integral_mse": 0.2
+  },
+  "amplitude": 1.0,
+  "mean_shrink": 0.0,
+  "smooth": 1,
+  "proxy_bias_strength": 0.0,
+  "code_revision": "d9c0676f3308a75a3876527c91f4700922c0f455",
+  "engine": "blend_sources_v1",
+  "runtime_llm": false
+}

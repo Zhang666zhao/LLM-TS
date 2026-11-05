@@ -1,0 +1,16 @@
+{
+  "engine": "masked_residual_strength_v1",
+  "source_ids": [
+    "run:20261105_factortree_calendar_sum_mse",
+    "run:20261105_factortree_calendar_sum_mse",
+    "run:20261105_calendarprior_exact_mse"
+  ],
+  "columns": [
+    "MULL",
+    "LUFL"
+  ],
+  "reference_strength": 0.25,
+  "strength": 0.5,
+  "artifact_role": "unscored composition intermediate, no targets read",
+  "code_revision": "506dd9d9d61f274dc28499345af55e05486282c5"
+}

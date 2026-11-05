@@ -1,0 +1,15 @@
+{
+  "engine": "fixed_view_prior_v1",
+  "source_ids": [
+    "run:20261105_fullpoint_semantic_mse",
+    "run:20261105_fullpoint_pca_mse",
+    "run:20261105_viewpoint_full_integral_mse"
+  ],
+  "weights": [
+    0.0,
+    0.4,
+    0.6
+  ],
+  "artifact_role": "unscored exact tree baseline, no target arrays read",
+  "code_revision": "965bc47b8f985201b2ba2e6f8d30387984f29257"
+}

@@ -1,0 +1,11 @@
+"""Dense chronological error-memory cases for independently prefix-fitted view tools."""
+from common import *
+from transformed_tool import transform,predict
+import sys,torch,gc
+from chronos import Chronos2Pipeline
+from transformers import TrainerCallback
+class Deadline(TrainerCallback):
+ def on_step_begin(self,args,state,control,**kwargs):guard(2400)
+def run(cut,mode):
+ end={3072:4096,4096:6272,6272:8640}[cut];ts=np.arange(cut+512,end-64+1,8);assert ts.min()-512>=cut and ts.max()+64<=end<=8640;name=f'20261105_prefixview_{cut}_{mode}_mse';out=ROOT/'runs'/name;out.mkdir(exist_ok=True);subprocess.run([sys.executable,str(ROOT/'src/preflight.py'),'--root',str(ROOT),'--run-name',name],check=True);guard(2400);z=np.load(RUN/'cache/trainval_z.npy')[:8640];cfg=dict(transform(z[:cut].astype(float),mode),engine='prefix_view_memory_source_v1',cutoff=cut,mode=mode,checkpoint_parent=name,query_origins=ts.tolist(),labels_end=end,training_rows=[0,cut],official_training_only=True,rate=5e-7,steps=500,seed=2021,scaler_caveat='Fixed official full-training scaler; weights and view matrix only fit prefix. This is held-out weight fitting, not an independently sealed raw-data benchmark.',code_revision=git_head());save_json(out/'config.json',cfg);torch.set_num_threads(4);torch.manual_seed(2021);torch.cuda.manual_seed_all(2021);np.random.seed(2021);lat=(z[:cut].astype(float)@np.asarray(cfg['matrix'])+np.asarray(cfg['bias'])).astype(np.float32);start=time.time();pipe=Chronos2Pipeline.from_pretrained(str(RUN/'models/chronos2_29ec3766'),device_map='cuda:0');trained=pipe.fit([torch.from_numpy(lat.T.copy())],prediction_length=64,validation_inputs=None,finetune_mode='full',context_length=512,learning_rate=5e-7,num_steps=500,batch_size=112,min_past=512,output_dir=out/'trainer',callbacks=[Deadline()],seed=2021,data_seed=2021,disable_tqdm=True,logging_steps=100,bf16=True,tf32=False);del pipe,trained;gc.collect();torch.cuda.empty_cache();p=predict(z,ts,cfg);_,y=windows(z,ts);np.save(out/'predictions.npy',p);np.save(out/'targets.npy',y);np.save(out/'origins.npy',ts);m=metric(p,y);save_json(out/'proxy_metrics.json',{'candidate':name,'scope':'training-prefix held-out labels; not official validation','metrics':m,'elapsed_seconds':time.time()-start});print(name,m['mse'],len(ts),flush=True)
+if __name__=='__main__':run(int(sys.argv[1]),sys.argv[2])

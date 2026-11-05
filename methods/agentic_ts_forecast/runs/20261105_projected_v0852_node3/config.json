@@ -1,0 +1,147 @@
+{
+  "engine": "projected_composition_v1",
+  "operator": "horizon_policy_v1",
+  "operator_config": {
+    "knot_weights": [
+      [
+        0.7999999999999999,
+        0.049999999999999996,
+        0.049999999999999996,
+        0.09999999999999999
+      ],
+      [
+        0.9,
+        0.03,
+        0.03,
+        0.04
+      ],
+      [
+        0.95,
+        0.02,
+        0.02,
+        0.01
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "variable_weights": {
+      "MULL": [
+        [
+          0.75,
+          0.05,
+          0.05,
+          0.15
+        ],
+        [
+          0.85,
+          0.04,
+          0.03,
+          0.08
+        ],
+        [
+          0.95,
+          0.02,
+          0.02,
+          0.01
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "OT": [
+        [
+          0.75,
+          0.05,
+          0.05,
+          0.15
+        ],
+        [
+          0.85,
+          0.04,
+          0.03,
+          0.08
+        ],
+        [
+          0.95,
+          0.02,
+          0.02,
+          0.01
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "LUFL": [
+        [
+          0.75,
+          0.15,
+          0.05,
+          0.05
+        ],
+        [
+          0.85,
+          0.08,
+          0.04,
+          0.03
+        ],
+        [
+          0.95,
+          0.03,
+          0.01,
+          0.01
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "engine": "horizon_policy_v1",
+    "knots": [
+      7.5,
+      23.5,
+      39.5,
+      55.5
+    ],
+    "runtime_llm": false,
+    "code_revision": "b43cac1bb474749e710e4ec60bf6776da8559cd2"
+  },
+  "original_slots": 4,
+  "source_slots": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "source_ids": [
+    "run:20261105_projected_v0852_node1",
+    "run:20261105_projected_v0852_node2",
+    "run:20261105_learnedrotation_r003_masked_mse",
+    "run:20261105_variabletree_calendar_d2_mse"
+  ],
+  "required_columns": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "compiled_from_config": "LLM_predict/runs/20261105_horizon_p17verifiedb001c3_mse/config.json",
+  "compiled_from_config_sha256": "eebc7e89e2af7070c014ee40a95100cdf544acd5c5839da562f4ece206cb3b90",
+  "runtime_llm": false,
+  "code_revision": "6f947b0c76af0e624a3f5d2cb257cdf9eda96b94"
+}

@@ -1,0 +1,20 @@
+{
+  "engine": "blend_sources_v1",
+  "sources": {
+    "run:20261105_fullpoint_pca_mse": 0.18,
+    "run:20261105_viewpoint_full_integral_mse": 0.27,
+    "run:20261105_transformedcdfmse_pca_mse": 0.3,
+    "run:20261105_transformedcdfmse_random_mse": 0.25
+  },
+  "amplitude": 1,
+  "mean_shrink": 0,
+  "smooth": 1,
+  "proxy_bias_strength": 0,
+  "artifact_role": "unscored DAG intermediate, no target read",
+  "code_revision": "c5283dffe1445ab08b8bd5df01bfb25234003b2d",
+  "clone_origin": "20261105_integral_core_unscored",
+  "checkpoint_replacements": {
+    "20261105_transformedmse_pca_mse": "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedmse_random_mse": "20261105_transformedcdfmse_random_mse"
+  }
+}

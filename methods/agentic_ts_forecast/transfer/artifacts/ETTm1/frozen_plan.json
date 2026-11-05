@@ -1,0 +1,406 @@
+{
+  "dataset": "ETTm1",
+  "variant": "ETTm1-portable-pool-v1",
+  "context": 512,
+  "horizon": 64,
+  "columns": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "minutes_per_step": 15,
+  "steps_per_day": 96,
+  "state": "tools.npz",
+  "state_sha256": "ddbe3635603d31bab27ec71a143d068a929f76609d2acc2e745e1c36111a5e7e",
+  "mean": [
+    7.9900134819611495,
+    2.0387478002096975,
+    5.109928063464273,
+    0.7562241616995178,
+    2.80470208448802,
+    0.7911860229808587,
+    17.12495024489946
+  ],
+  "std": [
+    5.833092669188463,
+    2.0896456935494983,
+    5.519042716237835,
+    1.924161057906986,
+    1.0405540563013658,
+    0.6324420613667575,
+    9.17303527390826
+  ],
+  "nodes": {
+    "E": {
+      "kind": "select",
+      "block": 64,
+      "map": [
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "DLinear"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_clock"
+        ]
+      ]
+    },
+    "prior1": {
+      "kind": "mean",
+      "sources": [
+        "DLinear",
+        "ridge_clock"
+      ]
+    },
+    "prior2": {
+      "kind": "mean",
+      "sources": [
+        "day_mean",
+        "ridge_full"
+      ]
+    },
+    "prior3": {
+      "kind": "mean",
+      "sources": [
+        "R",
+        "ridge_cross"
+      ]
+    },
+    "C": {
+      "kind": "select",
+      "block": 64,
+      "map": [
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "DLinear"
+        ],
+        [
+          "ridge_cross"
+        ],
+        [
+          "ridge_clock"
+        ]
+      ]
+    },
+    "M10": {
+      "kind": "mix",
+      "parent": "C",
+      "variable": "OT",
+      "source": "R",
+      "alpha": 0.3
+    },
+    "M9": {
+      "kind": "select",
+      "block": 64,
+      "map": [
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ]
+      ]
+    },
+    "M3": {
+      "kind": "select",
+      "block": 16,
+      "map": [
+        [
+          "C",
+          "C",
+          "A",
+          "A"
+        ],
+        [
+          "prior1",
+          "C",
+          "C",
+          "ridge_clock"
+        ],
+        [
+          "C",
+          "C",
+          "A",
+          "A"
+        ],
+        [
+          "prior1",
+          "C",
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        [
+          "prior1",
+          "C",
+          "ridge_cross",
+          "C"
+        ]
+      ]
+    },
+    "M6": {
+      "kind": "select",
+      "block": 32,
+      "map": [
+        [
+          "C",
+          "A"
+        ],
+        [
+          "C",
+          "ridge_clock"
+        ],
+        [
+          "C",
+          "A"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ]
+    },
+    "M8": {
+      "kind": "select",
+      "block": 64,
+      "map": [
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ],
+        [
+          "C"
+        ]
+      ]
+    },
+    "M2": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "LULL",
+      "source": "E",
+      "alpha": 0.2
+    },
+    "M1": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HUFL",
+      "source": "A",
+      "alpha": 0.25
+    },
+    "M4": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "HUFL",
+      "source": "E",
+      "alpha": 0.5
+    },
+    "M5": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "HULL",
+      "source": "E",
+      "alpha": 0.3
+    },
+    "M7": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "OT",
+      "source": "E",
+      "alpha": 0.5
+    },
+    "LLM1": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "LUFL",
+      "source": "R",
+      "alpha": 0.35
+    },
+    "LLM2": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "MULL",
+      "source": "R",
+      "alpha": 0.55
+    },
+    "LLM3": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HULL",
+      "source": "R",
+      "alpha": 0.75
+    },
+    "LLM4": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "OT",
+      "source": "A",
+      "alpha": 0.15
+    },
+    "LLM5": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HUFL",
+      "source": "A",
+      "alpha": 0.25
+    },
+    "LLM6": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HULL",
+      "source": "E",
+      "alpha": 0.45
+    },
+    "Rule1": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HUFL",
+      "source": "E",
+      "alpha": 0.308762467982259
+    },
+    "Rule2": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HUFL",
+      "source": "M9",
+      "alpha": 0.308762467982259
+    },
+    "Rule3": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "HUFL",
+      "source": "E",
+      "alpha": 0.308762467982259
+    },
+    "Rule4": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "HUFL",
+      "source": "M9",
+      "alpha": 0.308762467982259
+    },
+    "Rule5": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "HUFL",
+      "source": "A",
+      "alpha": 0.27632080423103983
+    },
+    "Rule6": {
+      "kind": "mix",
+      "parent": "M3",
+      "variable": "HUFL",
+      "source": "A",
+      "alpha": 0.27632080423103983
+    }
+  },
+  "outputs": {
+    "M1": "M1",
+    "M2": "M2",
+    "M3": "M3",
+    "M4": "M4",
+    "M5": "M5",
+    "M6": "M6",
+    "M7": "M7",
+    "M8": "M8",
+    "M9": "M9",
+    "M10": "M10",
+    "DLinear": "DLinear",
+    "LLM1": "LLM1",
+    "LLM2": "LLM2",
+    "LLM3": "LLM3",
+    "LLM4": "LLM4",
+    "LLM5": "LLM5",
+    "LLM6": "LLM6",
+    "Rule1": "Rule1",
+    "Rule2": "Rule2",
+    "Rule3": "Rule3",
+    "Rule4": "Rule4",
+    "Rule5": "Rule5",
+    "Rule6": "Rule6"
+  },
+  "runtime_sha256": "f5636ad55c11644aee4381e57fa44c6ff51b56c7d241fc9300b9c2fb18fc0653",
+  "selected": "Rule1",
+  "best_fixed": "M1",
+  "best_llm": "LLM5",
+  "best_rule": "Rule1"
+}

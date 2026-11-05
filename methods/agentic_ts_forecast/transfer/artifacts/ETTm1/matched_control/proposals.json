@@ -1,0 +1,68 @@
+[
+  {
+    "id": "Control1",
+    "node": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "LULL",
+      "source": "E",
+      "alpha": 0.25
+    },
+    "validation_mse": 0.31054659084462805
+  },
+  {
+    "id": "Control2",
+    "node": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "LUFL",
+      "source": "E",
+      "alpha": 0.25
+    },
+    "validation_mse": 0.31054659084462805
+  },
+  {
+    "id": "Control3",
+    "node": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "OT",
+      "source": "E",
+      "alpha": 0.25
+    },
+    "validation_mse": 0.3105382336548167
+  },
+  {
+    "id": "Control4",
+    "node": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "LULL",
+      "source": "E",
+      "alpha": 0.1
+    },
+    "validation_mse": 0.31054659084462805
+  },
+  {
+    "id": "Control5",
+    "node": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "LUFL",
+      "source": "E",
+      "alpha": 0.1
+    },
+    "validation_mse": 0.31054659084462805
+  },
+  {
+    "id": "Control6",
+    "node": {
+      "kind": "mix",
+      "parent": "M2",
+      "variable": "OT",
+      "source": "E",
+      "alpha": 0.5
+    },
+    "validation_mse": 0.3105379265021383
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "engine": "view_residual_memory_v1",
+  "source_ids": [
+    "run:20261105_transformedft_semantic_mse",
+    "run:20261105_transformedft_pca_mse",
+    "run:20261105_transformedft_random_mse"
+  ],
+  "regularization": 10,
+  "strength": 0.25,
+  "prior": [
+    0.0,
+    0.4,
+    0.6
+  ],
+  "features": 203,
+  "residual_target": "eight horizon blocks of8, linearly interpolated to64; flat endpoint extrapolation",
+  "training_memory": "LLM_predict/runs/20261105_agentic_continuous_mse/cache/view_prefix_memory.npz",
+  "training_memory_sha256": "0ee8161f3036e1de14d6aa3135da54311f62e65089681e60198866fb75dda120",
+  "training_cases": 483,
+  "fit_device": "cuda:0",
+  "scope": "prefix-only model errors; official training only; fulltrain scaler shared; overlapping cases not independent; proxy tools differ from deployed tools",
+  "code_revision": "d9c0676f3308a75a3876527c91f4700922c0f455"
+}

@@ -1,0 +1,38 @@
+{
+  "engine": "lora_finetune_v1",
+  "mode": "lora",
+  "peft_version": "0.18.1",
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "target_modules": [
+      "self_attention.q",
+      "self_attention.v",
+      "self_attention.k",
+      "self_attention.o",
+      "output_patch_embedding.output_layer"
+    ],
+    "lora_dropout": 0.0,
+    "bias": "none"
+  },
+  "learning_rate": 3e-05,
+  "steps": 500,
+  "context_length": 512,
+  "prediction_length": 64,
+  "min_past": 512,
+  "batch_size_including_variates": 112,
+  "seed": 2021,
+  "training_rows": [
+    0,
+    8640
+  ],
+  "checkpoint_selection": "fixed final500steps",
+  "point": "average nine quantiles",
+  "postfit_inference": "merged full checkpoint, reload explicit eval",
+  "code_revision": "2db9d13636c730143d5c69efc49aa35bdf0b4dbc",
+  "frozen_base_parameters_verified": 170,
+  "trainable_parameters": 1206912,
+  "total_parameters": 120684576,
+  "adapter_merge_max_delta": 1.6689300537109375e-06,
+  "adapter_comparison": "fresh saved adapter FP32 eval versus merged FP32 eval, no Trainer wrapper"
+}

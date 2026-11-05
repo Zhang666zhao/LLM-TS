@@ -1,0 +1,144 @@
+{
+  "llm": [
+    {
+      "id": "LLM1",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "LUFL",
+        "source": "R",
+        "alpha": 0.35
+      },
+      "validation_mse": 0.32116973833346474,
+      "duplicate": false
+    },
+    {
+      "id": "LLM2",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "MULL",
+        "source": "R",
+        "alpha": 0.55
+      },
+      "validation_mse": 0.32429859924881654,
+      "duplicate": false
+    },
+    {
+      "id": "LLM3",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "HULL",
+        "source": "R",
+        "alpha": 0.75
+      },
+      "validation_mse": 0.3332267669731733,
+      "duplicate": false
+    },
+    {
+      "id": "LLM4",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "OT",
+        "source": "A",
+        "alpha": 0.15
+      },
+      "validation_mse": 0.3105418694361964,
+      "duplicate": false
+    },
+    {
+      "id": "LLM5",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "HUFL",
+        "source": "A",
+        "alpha": 0.25
+      },
+      "validation_mse": 0.31049106385067365,
+      "duplicate": false
+    },
+    {
+      "id": "LLM6",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "HULL",
+        "source": "E",
+        "alpha": 0.45
+      },
+      "validation_mse": 0.3105162706430576,
+      "duplicate": false
+    }
+  ],
+  "deterministic": [
+    {
+      "id": "Rule1",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "HUFL",
+        "source": "E",
+        "alpha": 0.308762467982259
+      },
+      "validation_mse": 0.31046727093613635
+    },
+    {
+      "id": "Rule2",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "HUFL",
+        "source": "M9",
+        "alpha": 0.308762467982259
+      },
+      "validation_mse": 0.31046727093613635
+    },
+    {
+      "id": "Rule3",
+      "node": {
+        "kind": "mix",
+        "parent": "M3",
+        "variable": "HUFL",
+        "source": "E",
+        "alpha": 0.308762467982259
+      },
+      "validation_mse": 0.31046727093613635
+    },
+    {
+      "id": "Rule4",
+      "node": {
+        "kind": "mix",
+        "parent": "M3",
+        "variable": "HUFL",
+        "source": "M9",
+        "alpha": 0.308762467982259
+      },
+      "validation_mse": 0.31046727093613635
+    },
+    {
+      "id": "Rule5",
+      "node": {
+        "kind": "mix",
+        "parent": "M2",
+        "variable": "HUFL",
+        "source": "A",
+        "alpha": 0.27632080423103983
+      },
+      "validation_mse": 0.3104905554175602
+    },
+    {
+      "id": "Rule6",
+      "node": {
+        "kind": "mix",
+        "parent": "M3",
+        "variable": "HUFL",
+        "source": "A",
+        "alpha": 0.27632080423103983
+      },
+      "validation_mse": 0.3104905554175602
+    }
+  ]
+}

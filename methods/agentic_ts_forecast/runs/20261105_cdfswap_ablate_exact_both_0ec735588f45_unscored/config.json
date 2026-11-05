@@ -1,0 +1,18 @@
+{
+  "engine": "residual_transfer_v1",
+  "source_ids": [
+    "run:20261105_cdfswap_both_71ff8a0ce6df_unscored",
+    "run:20261105_auto_p05b005c1_mse",
+    "run:20261105_auto_p05b005c1_mse"
+  ],
+  "strength": 0.25,
+  "memory_parent_strength": 0.25,
+  "caveat": "Residual fitted to weaker mean9 tool prior, transferred unchanged to stronger policy; fulltrain dev/confirm in-sample, no independent claim",
+  "code_revision": "965bc47b8f985201b2ba2e6f8d30387984f29257",
+  "clone_origin": "20261105_cdfswap_both_39cf3de8fcc0_unscored",
+  "artifact_role": "unscored DAG intermediate, no target read",
+  "checkpoint_replacements": {
+    "20261105_prefixtree_cdf_d4_mse": "20261105_tree_prior_exact_unscored",
+    "20261105_viewresidual_ridge10_mse": "20261105_auto_p05b005c1_mse"
+  }
+}

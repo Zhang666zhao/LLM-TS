@@ -1,0 +1,14 @@
+{
+  "engine": "fixed_view_prior_v1",
+  "source_ids": [
+    "run:20261105_transformedcalft_semantic_mse",
+    "run:20261105_transformedcalft_pca_mse",
+    "run:20261105_transformedcalft_random_mse"
+  ],
+  "weights": [
+    0.0,
+    0.4,
+    0.6
+  ],
+  "code_revision": "c823b33b8b8b599c26ac007b26059d3c4925885d"
+}

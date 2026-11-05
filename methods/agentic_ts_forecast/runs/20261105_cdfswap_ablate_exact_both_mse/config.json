@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "run:20261105_cdfswap_ablate_exact_both_0ae14660fdd2_unscored": 0.85,
+    "run:20261105_tree_prior_exact_unscored": 0.1,
+    "run:20261105_rotationseed_2024_mse": 0.05
+  },
+  "amplitude": 1,
+  "mean_shrink": 0,
+  "smooth": 1,
+  "proxy_bias_strength": 0.05,
+  "code_revision": "965bc47b8f985201b2ba2e6f8d30387984f29257",
+  "engine": "blend_sources_v1",
+  "runtime_llm": false,
+  "clone_origin": "20261105_auto_p10b006c2_mse",
+  "artifact_role": "scored root",
+  "checkpoint_replacements": {
+    "20261105_prefixtree_cdf_d4_mse": "20261105_tree_prior_exact_unscored",
+    "20261105_viewresidual_ridge10_mse": "20261105_auto_p05b005c1_mse"
+  }
+}

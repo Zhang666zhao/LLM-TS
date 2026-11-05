@@ -1,0 +1,16 @@
+{
+  "engine": "masked_residual_strength_v1",
+  "source_ids": [
+    "run:20261105_variabletree_calendar_d2_mse",
+    "run:20261105_variabletree_calendar_d2_mse",
+    "run:20261105_calendarprior_exact_mse"
+  ],
+  "columns": [
+    "MULL",
+    "LUFL"
+  ],
+  "reference_strength": 0.25,
+  "strength": 0.5,
+  "artifact_role": "unscored compiled intermediate, no target read",
+  "code_revision": "c3bbe187ed2c67f057a1591ff5f425bf56f43851"
+}

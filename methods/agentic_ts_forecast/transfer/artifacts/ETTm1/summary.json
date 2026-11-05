@@ -1,0 +1,77 @@
+{
+  "dataset": "ETTm1",
+  "variant": "ETTm1-portable-pool-v1",
+  "selected": "Rule1",
+  "best_by_validation": {
+    "fixed": {
+      "method": "M1",
+      "family": "fixed",
+      "val_mse": 0.31049106384471464,
+      "val_mae": 0.362591115883797,
+      "test_mse": 0.27175294240385206,
+      "test_mae": 0.32824891284986224,
+      "gain_vs_dlinear_pct": 7.102306793599345
+    },
+    "LLM": {
+      "method": "LLM5",
+      "family": "LLM",
+      "val_mse": 0.31049106384471464,
+      "val_mae": 0.362591115883797,
+      "test_mse": 0.27175294240385206,
+      "test_mae": 0.32824891284986224,
+      "gain_vs_dlinear_pct": 7.102306793599345
+    },
+    "six-rule": {
+      "method": "Control6",
+      "family": "six-rule",
+      "val_mse": 0.3105379265015484,
+      "val_mae": 0.3625709534063982,
+      "test_mse": 0.2716338583766307,
+      "test_mae": 0.3281406466421674,
+      "gain_vs_dlinear_pct": 7.14301520812004
+    },
+    "analytic": {
+      "method": "Rule1",
+      "family": "analytic",
+      "val_mse": 0.3104672709345749,
+      "val_mae": 0.36236170990803546,
+      "test_mse": 0.2715422743783376,
+      "test_mae": 0.3279609096086475,
+      "gain_vs_dlinear_pct": 7.174322844021919
+    }
+  },
+  "full_test_windows": 11457,
+  "context_steps": 512,
+  "forecast_steps": 64,
+  "history_hours": 128,
+  "forecast_hours": 16,
+  "deployment_clean_directory_delta": 9.5367431640625e-07,
+  "deploy_zip_sha256": "f61c81787c2ac13e36e4081437626f67aba4f82461c97084a4e21a205cc8c7d0",
+  "equal_test_outputs": [
+    [
+      "M2",
+      "M3"
+    ],
+    [
+      "M8",
+      "M9"
+    ],
+    [
+      "M1",
+      "LLM5"
+    ]
+  ],
+  "historical_dlinear_test_mse": 0.29252926863834333,
+  "matched_dlinear_delta": -1.2349471445460836e-10,
+  "platform": "macOS-15.7.1-arm64-arm-64bit",
+  "numpy": "2.0.2",
+  "torch": "2.8.0",
+  "source_hashes": {
+    "fit.py": "693e901fd135cf7400c8255dd9a445733ce20caa17e08b72eaf589cdbaca0a7a",
+    "forecast.py": "f5636ad55c11644aee4381e57fa44c6ff51b56c7d241fc9300b9c2fb18fc0653",
+    "controls.py": "3c5181d2f8d25f215221f2889b314ed4530fa4653ddf475151e160907d2921e0",
+    "run_pipeline.py": "bd7fa648b734198856e3687957254d9fe36fe8868fe0086b5dc33ff541d0109e",
+    "predict.py": "c892ca47589286c6d31e456a767cf6bcaa99b97fe549f7fd1f3972b63a731f9a",
+    "contract.json": "1cf74cee7fa30b3ac8497d8d6c26dc01d1ea69e10839f58c785f1f04295562a5"
+  }
+}

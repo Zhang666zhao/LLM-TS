@@ -1,0 +1,54 @@
+{
+  "engine": "projected_composition_v1",
+  "operator": "column_selector_v1",
+  "operator_config": {
+    "engine": "column_selector_v1",
+    "column_source_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_by_variable": {
+      "HUFL": "20261105_learnedrotation_r003_masked_mse",
+      "HULL": "20261105_rotationcontinued_lr1e7_mse",
+      "MUFL": "20261105_matrixadapter_triangular_mse",
+      "MULL": "20261105_variabletree_calendar_d2_s50_mse",
+      "LUFL": "20261105_variabletree_earlycalendar_d4_mse",
+      "LULL": "20261105_rotationseed_2024_mse",
+      "OT": "20261105_ridge_individual1_mse"
+    },
+    "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/v0823/pool.json",
+    "selection_pool_sha256": "1c3389929af773ff1a06b2bbd382234d1766c690d3babb86e5e747046b0b3fda",
+    "selection_mode": "standalone",
+    "pool_size": 442,
+    "runtime_llm": false,
+    "selection": "discrete per-variable validation selection; all fitting performed in existing training-only tools; no test access",
+    "code_revision": "7a6453e161471d6ba16b72345d0954743233a4fc"
+  },
+  "original_slots": 7,
+  "source_slots": [
+    4
+  ],
+  "source_ids": [
+    "run:20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "required_columns": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+  ],
+  "compiled_from_config": "LLM_predict/runs/20261105_columnselect_v0823_standalone_mse/config.json",
+  "compiled_from_config_sha256": "78f6550abdd71290208a2971292e940f4ff6c0926623922f830210f7de2e171c",
+  "runtime_llm": false,
+  "code_revision": "6f947b0c76af0e624a3f5d2cb257cdf9eda96b94",
+  "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/v0823/pool.json",
+  "selection_pool_sha256": "1c3389929af773ff1a06b2bbd382234d1766c690d3babb86e5e747046b0b3fda"
+}

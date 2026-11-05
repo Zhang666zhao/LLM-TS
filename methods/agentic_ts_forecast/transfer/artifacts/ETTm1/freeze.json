@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "2698ab1ed7dc4fa476f8b08684b06c0943bc3c2f134197147677760429d6e233",
+  "weights_sha256": "ddbe3635603d31bab27ec71a143d068a929f76609d2acc2e745e1c36111a5e7e",
+  "selection": "minimum validation macro MSE among fixed M1\u2013M10 and six proposals per planner",
+  "selected": [
+    0.31046727093613635,
+    "Rule1"
+  ],
+  "frozen_epoch": 1793872596.6149561,
+  "validation_count": 11457,
+  "train_end": 34560,
+  "val_end": 46080
+}

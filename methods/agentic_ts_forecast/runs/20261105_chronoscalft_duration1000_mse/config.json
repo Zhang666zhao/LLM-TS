@@ -1,0 +1,21 @@
+{
+  "learning_rate": 5e-07,
+  "steps": 1000,
+  "context_length": 512,
+  "prediction_length": 64,
+  "min_past": 512,
+  "batch_size_including_variates": 112,
+  "seed": 2021,
+  "mode": "full",
+  "calendar": "hour",
+  "known_future_calendar": true,
+  "engine": "calendar_finetune_v1",
+  "point": "average nine .1-.9 quantiles",
+  "training_rows": [
+    0,
+    8640
+  ],
+  "checkpoint_selection": "fixed final step; full validation evaluates candidate afterward",
+  "code_revision": "8886f0a85dcfdd529413894039e84769ebd03b78",
+  "postfit_inference": "reload saved checkpoint, explicit eval"
+}

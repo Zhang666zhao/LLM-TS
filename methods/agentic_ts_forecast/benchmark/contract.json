@@ -1,0 +1,60 @@
+{
+  "dataset": "ETTh1",
+  "source_sha256": "3dbe45a7a25cbf0eb6d82cb84ef4487ea2b73a9341e5ff0d082e340b9d943f1d",
+  "variables": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "split": {
+    "train_start": 0,
+    "train_end": 8640,
+    "val_start": 8128,
+    "val_end": 11520,
+    "test_start": 11008,
+    "test_end": 14400
+  },
+  "scaler_mean": [
+    7.9377422455493045,
+    2.0210386567123844,
+    5.07977060117037,
+    0.7461858799814816,
+    2.7817623863756946,
+    0.7884531235607639,
+    17.12826169827882
+  ],
+  "scaler_scale": [
+    5.81274940907899,
+    2.0901046503913774,
+    5.518793579069248,
+    1.9263792741210073,
+    1.0235226595117355,
+    0.6302366362134401,
+    9.176491025127511
+  ],
+  "context": 512,
+  "horizon": 64,
+  "stride": 1,
+  "version": "etth1-llm-history-only-v1",
+  "source": "assets/ETTh1.csv",
+  "baseline_directory": "assets/weights",
+  "baseline_code_commit": "ad69667428a419212e8e38fd79eaf4893562b8a0",
+  "baseline_mse": 0.35326292998517816,
+  "target_mse": 0.3709260764844371,
+  "metric": "float64 mean squared error over all windows, 64 steps and 7 standardized variables",
+  "baseline_sha256": {
+    "predictions_f32.npy": "43eef961d437c4f86a4e9c8f7a02b5351f63b5930c556309fe4e8692b74fc7f5",
+    "targets_f32.npy": "7062e4a7c7b3ce70c47b017d736ae454c3dc0e5a96368b1799861975139d6182",
+    "window_start.npy": "c86eec5764270e24c8c6314b647dff234aacc0c690e7569692d55e1926ecf7e6",
+    "metrics.json": "e5c6662a77cbc70116b5440389f9c89b9dbaa9db893f09f286ca5ba79df1ca03"
+  },
+  "test_targets_reverified": true,
+  "oracle_allowed": false,
+  "train_windows": 8065,
+  "val_windows": 2817,
+  "test_windows": 2817
+}

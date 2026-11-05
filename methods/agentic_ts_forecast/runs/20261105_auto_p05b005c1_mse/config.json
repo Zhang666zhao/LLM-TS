@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "run:20261105_transformedft_pca_mse": 0.4,
+    "run:20261105_transformedft_random_mse": 0.6
+  },
+  "amplitude": 1.0,
+  "mean_shrink": 0.0,
+  "smooth": 1,
+  "proxy_bias_strength": 0.0,
+  "code_revision": "3aa2a61146fa72ccdb389aa62f712451439734b6",
+  "engine": "blend_sources_v1",
+  "runtime_llm": false
+}

@@ -1,0 +1,12 @@
+"""Synthetic-only audit of an experimental differentiable decode wrapper; no optimizer steps."""
+from common import *
+import torch,sys,inspect
+from timesfm3 import TimesFM3Evaluator,ModelConfig
+subprocess.run([sys.executable,str(ROOT/'src/preflight.py'),'--root',str(ROOT),'--run-name','20261105_timesfm_gradient_contract'],check=True);guard(1800);torch.set_num_threads(4);torch.manual_seed(2021);torch.cuda.manual_seed_all(2021);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False;free,total=torch.cuda.mem_get_info(0);assert free>20*1024**3,'Insufficient free memory for synthetic audit';pipe=TimesFM3Evaluator(ModelConfig(checkpoint_path=str(RUN/'models/timesfm3_43046b85'),per_core_batch_size=8,device='cuda:0',local_files_only=True));net=pipe.model;raw=net.decode.__wrapped__;x=torch.randn(2,512,7,device='cuda:0');net.eval()
+def direct(x):
+ n=len(x);target=torch.cat([x.transpose(1,2),-x.transpose(1,2)],0);q=raw(net,target=target,horizon=64);return ((q[:n].mean(-1)-q[n:].mean(-1))*.5).transpose(1,2)
+with torch.no_grad():
+ a=direct(x);xx=x.clone();xx[1]+=10;b=direct(xx);public=list(pipe.predict_batch([v.cpu().numpy().T.copy() for v in x],horizon=64,return_quantiles=True,use_symmetric_averaging=True,make_positive=False,sort_quantiles=True,use_znorm=False,padding_mode='none'));p=np.stack([v.quantiles.transpose(1,0,2).mean(-1) for v in public]);agreement=float(abs(a.cpu().numpy()-p).max());isolation=float(abs(a[0]-b[0]).max())
+assert agreement<1e-5 and isolation<1e-5,('TimesFM direct/public/isolation',agreement,isolation);net.train();torch.cuda.reset_peak_memory_stats()
+with torch.autocast('cuda',dtype=torch.bfloat16):pred=direct(x);loss=pred.square().mean()
+loss.backward();grads=[v.grad for v in net.parameters() if v.requires_grad and v.grad is not None];assert grads and all(torch.isfinite(g).all() for g in grads);result={'synthetic_only':True,'optimizer_steps':0,'source_note':'Installed TimesFM3 calls this implementation inference-only; wrapper bypasses only torch.no_grad decorator, not a supported official training API','direct_public_max_delta':agreement,'other_window_perturbation_delta':isolation,'finite_backward':True,'parameter_count':sum(v.numel() for v in net.parameters()),'gradient_tensors':len(grads),'peak_cuda_bytes':torch.cuda.max_memory_allocated(),'model_source_sha256':hashlib.sha256(pathlib.Path(inspect.getsourcefile(type(net))).read_bytes()).hexdigest(),'code_revision':git_head()};save_json(RUN/'timesfm_gradient_contract.json',result);print(result,flush=True)

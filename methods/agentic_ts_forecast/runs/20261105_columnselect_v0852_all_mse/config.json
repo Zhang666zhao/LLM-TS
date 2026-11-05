@@ -1,0 +1,35 @@
+{
+  "engine": "column_selector_v1",
+  "source_ids": [
+    "run:20261105_projected_p16_node19",
+    "run:20261105_horizon_p17verifiedb001c3_mse",
+    "run:20261105_horizon_p16statsb002c1_mse",
+    "run:20261105_horizon_p17covb001c2_mse",
+    "run:20261105_horizon_p17verifiedb001c1_mse"
+  ],
+  "column_source_indices": [
+    0,
+    1,
+    2,
+    0,
+    3,
+    0,
+    4
+  ],
+  "selected_by_variable": {
+    "HUFL": "20261105_projected_p16_node19",
+    "HULL": "20261105_horizon_p17verifiedb001c3_mse",
+    "MUFL": "20261105_horizon_p16statsb002c1_mse",
+    "MULL": "20261105_projected_p16_node19",
+    "LUFL": "20261105_horizon_p17covb001c2_mse",
+    "LULL": "20261105_projected_p16_node19",
+    "OT": "20261105_horizon_p17verifiedb001c1_mse"
+  },
+  "selection_pool": "LLM_predict/runs/20261105_agentic_continuous_mse/selection_pools/v0852/pool.json",
+  "selection_pool_sha256": "9803ab5a58109f9c019ba0ccb3d198f27a5faad13137f701b615410217db8d0e",
+  "selection_mode": "all",
+  "pool_size": 497,
+  "runtime_llm": false,
+  "selection": "discrete per-variable validation selection; all fitting performed in existing training-only tools; no test access",
+  "code_revision": "6f947b0c76af0e624a3f5d2cb257cdf9eda96b94"
+}

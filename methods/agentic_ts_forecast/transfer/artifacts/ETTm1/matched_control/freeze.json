@@ -1,0 +1,5 @@
+{
+  "plan_sha256": "8bcd2ce846f9a3b89cbeb89c943ab8ab29304c859d66cf8f38678d3ed8935bdf",
+  "frozen_epoch": 1793872653.0613859,
+  "criterion": "Six deterministic edits, three then three, validation only; secondary comparison"
+}

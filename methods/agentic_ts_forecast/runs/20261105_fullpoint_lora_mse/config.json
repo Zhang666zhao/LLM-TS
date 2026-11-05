@@ -1,0 +1,207 @@
+{
+  "engine": "transformed_tool_v1",
+  "mode": "lora",
+  "peft_version": "0.18.1",
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "target_modules": [
+      "self_attention.q",
+      "self_attention.v",
+      "self_attention.k",
+      "self_attention.o",
+      "output_patch_embedding.output_layer"
+    ],
+    "lora_dropout": 0.0,
+    "bias": "none"
+  },
+  "learning_rate": 3e-05,
+  "steps": 500,
+  "context_length": 512,
+  "prediction_length": 64,
+  "min_past": 512,
+  "batch_size_including_variates": 112,
+  "seed": 2021,
+  "training_rows": [
+    0,
+    8640
+  ],
+  "checkpoint_selection": "fixed final500steps",
+  "point": "latent quantile CDF trapezoid integral with flat endpoint tails, then inverse POINT transform",
+  "postfit_inference": "merged full checkpoint, reload explicit eval",
+  "code_revision": "c92e4b55aeaa442ebfce83d9f01306fdeaf70d4c",
+  "frozen_base_parameters_verified": 170,
+  "trainable_parameters": 1206912,
+  "total_parameters": 120684576,
+  "adapter_merge_max_delta": 1.6689300537109375e-06,
+  "adapter_comparison": "fresh saved adapter FP32 eval versus merged FP32 eval, no Trainer wrapper",
+  "checkpoint_parent": "20261105_chronoslora_lr3e-5_p0181_fixed_mse",
+  "point_rule": "full_integral",
+  "point_quantile_levels": [
+    0.01,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "parent_point_metadata": "average nine quantiles",
+  "source_ids": [
+    "run:20261105_chronoslora_lr3e-5_p0181_fixed_mse"
+  ],
+  "matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "bias": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "inverse_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "transform": "identity; native original-coordinate model"
+}

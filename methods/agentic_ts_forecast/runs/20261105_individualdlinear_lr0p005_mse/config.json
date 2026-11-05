@@ -1,0 +1,16 @@
+{
+  "engine": "individual_dlinear_v1",
+  "individual": true,
+  "external_model_source": "TSRAG/third_party/LTSF-Linear/models/DLinear.py",
+  "external_model_source_sha256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+  "seed_cpu": 2021,
+  "seed_cuda": 2021,
+  "batch": 32,
+  "lr": 0.005,
+  "max_epochs": 10,
+  "patience": 3,
+  "scheduler": "lr half after each epoch",
+  "training_stride": 1,
+  "checkpoint_selection": "full validation macro MSE",
+  "code_revision": "68c1e304df304c4bd9a961eb7169051d1d357352"
+}

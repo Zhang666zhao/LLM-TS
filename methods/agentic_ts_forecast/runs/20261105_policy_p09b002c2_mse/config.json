@@ -1,0 +1,63 @@
+{
+  "source_ids": [
+    "run:20261105_residualtransfer_a25_mse",
+    "run:20261105_auto_p08b001c1_mse",
+    "run:20261105_fullpoint_calendar1000_mse",
+    "run:20261105_fullpoint_lora_mse"
+  ],
+  "base_weights": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "variable_weights": {
+    "LULL": [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "OT": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "rules": [],
+  "engine": "specialist_policy_v1",
+  "runtime_llm": false,
+  "first_matching_rule_wins": true,
+  "feature_bounds": {
+    "acf24": [
+      -1,
+      1
+    ],
+    "drift24": [
+      -2,
+      2
+    ],
+    "level_shift": [
+      -2,
+      2
+    ],
+    "volatility_ratio": [
+      0.25,
+      3
+    ],
+    "skew168": [
+      -3,
+      3
+    ],
+    "kurtosis168": [
+      -2,
+      15
+    ],
+    "expert_disagreement": [
+      0,
+      2
+    ]
+  },
+  "code_revision": "7ffa7e8c7bc64d516193e60a012eca75761c3a47"
+}

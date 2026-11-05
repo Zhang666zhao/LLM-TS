@@ -1,0 +1,19 @@
+{
+  "engine": "strong_view_feedback_v1",
+  "mode": "uniform",
+  "strength": 0.2,
+  "source_ids": [
+    "run:20261105_p11constant_ranked_mse",
+    "run:20261105_transformedcalft_random_mse",
+    "run:20261105_transformedcdfmse_pca_mse",
+    "run:20261105_rotationseed_2024_mse"
+  ],
+  "tools": [
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcdfmse_pca_mse",
+    "20261105_rotationseed_2024_mse"
+  ],
+  "runtime_llm": false,
+  "code_revision": "cae0d5bf9ef4ca603b998bceacbf6a3e17eefc01",
+  "input_scope": "512only:448hindcast64observed; future forecast512; hourly routing"
+}

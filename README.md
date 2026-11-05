@@ -1,5 +1,9 @@
 # LLM-TS
 
+## agentic_ts_forecast 分支
+
+首次使用请读 **[新同学操作手册：安装、恢复资料、复现实验、部署与方舟入口](methods/agentic_ts_forecast/README.md)**。本分支在研究分支上新增 ETTh1 和 ETTm1 的冻结预测方法，下面保留历史方向标签项目说明。
+
 ## 未来方向标签辅助预测研究分支
 
 本分支用于从oracle方向标签走向历史输入可预测标签。先读

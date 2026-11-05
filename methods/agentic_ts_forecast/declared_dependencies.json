@@ -1,0 +1,1178 @@
+{
+  "20261105_columnselect_final0925_all_mse": [
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_blockcolumns_v0920_b32_mse",
+    "20261105_compact_p19factsb001c3_mse",
+    "20261105_compact_p20analogueb003c1_mse"
+  ],
+  "20261105_blockcolumns_v0920_b16_mse": [
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p16covb001c1_mse",
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_horizon_p15statsb001c3_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_p11constant_ranked_mse": [
+    "20261105_auto_p10b004c3_mse",
+    "20261105_auto_p10b006c2_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_auto_p10b006c2_mse": [
+    "20261105_cdfswap_both_mse",
+    "20261105_prefixtree_cdf_d4_mse",
+    "20261105_rotationseed_2024_mse"
+  ],
+  "20261105_rotationseed_2024_mse": [],
+  "20261105_prefixtree_cdf_d4_mse": [
+    "20261105_fullpoint_pca_mse",
+    "20261105_fullpoint_semantic_mse",
+    "20261105_viewpoint_full_integral_mse"
+  ],
+  "20261105_viewpoint_full_integral_mse": [
+    "20261105_transformedft_random_mse"
+  ],
+  "20261105_transformedft_random_mse": [],
+  "20261105_fullpoint_semantic_mse": [
+    "20261105_transformedft_semantic_mse"
+  ],
+  "20261105_transformedft_semantic_mse": [],
+  "20261105_fullpoint_pca_mse": [
+    "20261105_transformedft_pca_mse"
+  ],
+  "20261105_transformedft_pca_mse": [],
+  "20261105_cdfswap_both_mse": [
+    "20261105_cdfswap_both_39cf3de8fcc0_unscored",
+    "20261105_cdfswap_both_71ff8a0ce6df_unscored",
+    "20261105_fullpoint_calendar1000_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_policy_p09b002c2_mse",
+    "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedcdfmse_random_mse"
+  ],
+  "20261105_fullpoint_calendar1000_mse": [
+    "20261105_chronoscalft_duration1000_mse"
+  ],
+  "20261105_chronoscalft_duration1000_mse": [],
+  "20261105_cdfswap_both_71ff8a0ce6df_unscored": [
+    "20261105_auto_p08b001c1_mse",
+    "20261105_cdfswap_both_0906a70c3b30_unscored",
+    "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedcdfmse_random_mse",
+    "20261105_viewpoint_full_integral_mse"
+  ],
+  "20261105_cdfswap_both_0906a70c3b30_unscored": [
+    "20261105_cdfswap_both_1b4c85ab53bd_unscored",
+    "20261105_fullpoint_calendar1000_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedcdfmse_random_mse",
+    "20261105_transformedft_semantic_mse"
+  ],
+  "20261105_fullpoint_lora_mse": [
+    "20261105_chronoslora_lr3e-5_p0181_fixed_mse"
+  ],
+  "20261105_chronoslora_lr3e-5_p0181_fixed_mse": [],
+  "20261105_cdfswap_both_1b4c85ab53bd_unscored": [
+    "20261105_fullpoint_pca_mse",
+    "20261105_integral_core_unscored",
+    "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedcdfmse_random_mse",
+    "20261105_viewpoint_full_integral_mse"
+  ],
+  "20261105_integral_core_unscored": [
+    "20261105_fullpoint_pca_mse",
+    "20261105_transformedmse_pca_mse",
+    "20261105_transformedmse_random_mse",
+    "20261105_viewpoint_full_integral_mse"
+  ],
+  "20261105_transformedmse_random_mse": [],
+  "20261105_transformedmse_pca_mse": [],
+  "20261105_transformedcdfmse_pca_mse": [],
+  "20261105_transformedcdfmse_random_mse": [],
+  "20261105_specialist_combo_core_lora_calendar_mse": [
+    "20261105_fullpoint_calendar1000_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_integral_core_unscored",
+    "20261105_transformedft_semantic_mse"
+  ],
+  "20261105_auto_p08b001c1_mse": [
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_viewpoint_full_integral_mse"
+  ],
+  "20261105_cdfswap_both_39cf3de8fcc0_unscored": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_cdfswap_both_71ff8a0ce6df_unscored",
+    "20261105_residualtransfer_a25_mse",
+    "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedcdfmse_random_mse",
+    "20261105_viewresidual_ridge10_mse"
+  ],
+  "20261105_viewresidual_ridge10_mse": [
+    "20261105_transformedft_pca_mse",
+    "20261105_transformedft_random_mse",
+    "20261105_transformedft_semantic_mse"
+  ],
+  "20261105_residualtransfer_a25_mse": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_auto_p08b001c1_mse",
+    "20261105_viewresidual_ridge10_mse"
+  ],
+  "20261105_auto_p05b005c1_mse": [
+    "20261105_transformedft_pca_mse",
+    "20261105_transformedft_random_mse"
+  ],
+  "20261105_policy_p09b002c2_mse": [
+    "20261105_auto_p08b001c1_mse",
+    "20261105_fullpoint_calendar1000_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_residualtransfer_a25_mse"
+  ],
+  "20261105_auto_p10b004c3_mse": [
+    "20261105_cdfswap_both_mse",
+    "20261105_prefixtree_cdf_d4_mse",
+    "20261105_rotationseed_2024_mse"
+  ],
+  "20261105_transformedcalft_random_mse": [],
+  "20261105_factorblockscaled_sum_mse": [
+    "20261105_calendarprior_exact_mse",
+    "20261105_factortree_calendar_sum_mse"
+  ],
+  "20261105_factortree_calendar_sum_mse": [
+    "20261105_transformedcalft_pca_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcalft_semantic_mse"
+  ],
+  "20261105_transformedcalft_pca_mse": [],
+  "20261105_transformedcalft_semantic_mse": [],
+  "20261105_calendarprior_exact_mse": [
+    "20261105_transformedcalft_pca_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcalft_semantic_mse"
+  ],
+  "20261105_factorblockswap_sum_mse": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_factorblockscaled_sum_mse"
+  ],
+  "20261105_compactrotation_exact_mse": [
+    "20261105_compactmemory_scaled_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_compactmemory_scaled_mse": [
+    "20261105_calendarprior_exact_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_variabletree_calendar_d2_mse": [
+    "20261105_transformedcalft_pca_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcalft_semantic_mse"
+  ],
+  "20261105_learnedrotation_r003_masked_mse": [
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_horizon_p16covb001c2_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_columnselect_v0823_standalone_mse": [
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_variabletree_earlycalendar_d4_mse": [
+    "20261105_transformedcalft_pca_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcalft_semantic_mse"
+  ],
+  "20261105_matrixadapter_triangular_mse": [
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_rotationcontinued_lr1e7_mse": [
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_variabletree_calendar_d2_s50_mse": [
+    "20261105_transformedcalft_pca_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcalft_semantic_mse"
+  ],
+  "20261105_ridge_individual1_mse": [],
+  "20261105_blockcolumns_v0824_b16_mse": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_strongviewfeedback_uniform_mse"
+  ],
+  "20261105_strongviewfeedback_uniform_mse": [
+    "20261105_p11constant_ranked_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcdfmse_pca_mse"
+  ],
+  "20261105_horizon_p15statsb002c2_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_horizon_p15statsb003c2_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_horizon_p12b001c2_mse": [
+    "20261105_policy_p11b002c2_mse",
+    "20261105_prefixtree_cdf_d4_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_policy_p11b002c2_mse": [
+    "20261105_auto_p10b004c3_mse",
+    "20261105_auto_p10b006c2_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_horizon_p15statsb002c1_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_auto_p10b001c2_mse": [
+    "20261105_cdfswap_both_mse",
+    "20261105_rotationseed_2024_mse"
+  ],
+  "20261105_auto_p10b004c2_mse": [
+    "20261105_cdfswap_both_mse",
+    "20261105_rotationseed_2023_mse"
+  ],
+  "20261105_rotationseed_2023_mse": [],
+  "20261105_horizon_p15statsb001c2_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_cdfswap_ablate_exact_both_mse": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_auto_p10b006c2_mse",
+    "20261105_cdfswap_ablate_exact_both_0ae14660fdd2_unscored",
+    "20261105_rotationseed_2024_mse",
+    "20261105_tree_prior_exact_unscored"
+  ],
+  "20261105_cdfswap_ablate_exact_both_0ae14660fdd2_unscored": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_cdfswap_ablate_exact_both_0ec735588f45_unscored",
+    "20261105_cdfswap_both_71ff8a0ce6df_unscored",
+    "20261105_cdfswap_both_mse",
+    "20261105_fullpoint_calendar1000_mse",
+    "20261105_fullpoint_lora_mse",
+    "20261105_tree_prior_exact_unscored"
+  ],
+  "20261105_cdfswap_ablate_exact_both_0ec735588f45_unscored": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_cdfswap_both_39cf3de8fcc0_unscored",
+    "20261105_cdfswap_both_71ff8a0ce6df_unscored",
+    "20261105_tree_prior_exact_unscored"
+  ],
+  "20261105_tree_prior_exact_unscored": [
+    "20261105_fullpoint_pca_mse",
+    "20261105_fullpoint_semantic_mse",
+    "20261105_viewpoint_full_integral_mse"
+  ],
+  "20261105_compact_p18factsb003c2_mse": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_columnselect_v0839_all_mse": [
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_horizon_p16statsb002c1_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_horizon_p16statsb002c2_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_p16_node19": [
+    "20261105_horizon_p16covb003c2_mse",
+    "20261105_projected_p16_node17",
+    "20261105_projected_p16_node18"
+  ],
+  "20261105_horizon_p16covb003c2_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_p16_node17": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_cdfswap_ablate_exact_ridge_mse",
+    "20261105_factorblockswap_interaction_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_horizon_p15covb001c2_mse",
+    "20261105_horizon_p15covb001c3_mse",
+    "20261105_horizon_p15covb003c1_mse",
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_horizon_p15statsb003c1_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_individualdlinear_lr0p001_mse",
+    "20261105_individualdlinear_lr0p005_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_projected_p16_node11",
+    "20261105_projected_p16_node14",
+    "20261105_projected_p16_node15",
+    "20261105_projected_p16_node16",
+    "20261105_projected_p16_node3",
+    "20261105_projected_p16_node6",
+    "20261105_projected_p16_node9",
+    "20261105_ridge_individual1_mse",
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_strongviewfeedback_uniform_mse"
+  ],
+  "20261105_horizon_p15covb003c1_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_horizon_p15statsb003c1_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_projected_p16_node15": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse"
+  ],
+  "20261105_projected_p16_node14": [
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_p16_node13"
+  ],
+  "20261105_projected_p16_node13": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_p16_node12"
+  ],
+  "20261105_projected_p16_node12": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_projected_p16_node11": [
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_p16_node10"
+  ],
+  "20261105_projected_p16_node10": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_p16_node1"
+  ],
+  "20261105_projected_p16_node1": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_projected_p16_node6": [
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_p16_node5"
+  ],
+  "20261105_projected_p16_node5": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_p16_node4"
+  ],
+  "20261105_projected_p16_node4": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_horizon_p15covb001c2_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_individualdlinear_lr0p001_mse": [],
+  "20261105_projected_p16_node9": [
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_p16_node8"
+  ],
+  "20261105_projected_p16_node8": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_p16_node7"
+  ],
+  "20261105_projected_p16_node7": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_factorblockswap_interaction_mse": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_factorblockscaled_interaction_mse"
+  ],
+  "20261105_factorblockscaled_interaction_mse": [
+    "20261105_calendarprior_exact_mse",
+    "20261105_factortree_calendar_interaction_mse"
+  ],
+  "20261105_factortree_calendar_interaction_mse": [
+    "20261105_transformedcalft_pca_mse",
+    "20261105_transformedcalft_random_mse",
+    "20261105_transformedcalft_semantic_mse"
+  ],
+  "20261105_horizon_p15covb001c3_mse": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_p11constant_ranked_mse"
+  ],
+  "20261105_cdfswap_ablate_exact_ridge_mse": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_auto_p10b006c2_mse",
+    "20261105_cdfswap_ablate_exact_ridge_0ae14660fdd2_unscored",
+    "20261105_prefixtree_cdf_d4_mse",
+    "20261105_rotationseed_2024_mse"
+  ],
+  "20261105_cdfswap_ablate_exact_ridge_0ae14660fdd2_unscored": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_cdfswap_ablate_exact_ridge_0ec735588f45_unscored",
+    "20261105_cdfswap_both_71ff8a0ce6df_unscored",
+    "20261105_cdfswap_both_mse",
+    "20261105_fullpoint_calendar1000_mse",
+    "20261105_fullpoint_lora_mse"
+  ],
+  "20261105_cdfswap_ablate_exact_ridge_0ec735588f45_unscored": [
+    "20261105_auto_p05b005c1_mse",
+    "20261105_cdfswap_both_39cf3de8fcc0_unscored",
+    "20261105_cdfswap_both_71ff8a0ce6df_unscored"
+  ],
+  "20261105_individualdlinear_lr0p005_mse": [],
+  "20261105_projected_p16_node16": [
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_policy_p11b002c2_mse",
+    "20261105_rotationseed_2024_mse"
+  ],
+  "20261105_projected_p16_node3": [
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_p16_node2"
+  ],
+  "20261105_projected_p16_node2": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_p16_node1"
+  ],
+  "20261105_projected_p16_node18": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_horizon_p16covb001c1_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_v0852_node20": [
+    "20261105_columnselect_v0852_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p17covb001c2_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node16",
+    "20261105_projected_v0852_node19",
+    "20261105_projected_v0852_node3",
+    "20261105_projected_v0852_node9"
+  ],
+  "20261105_columnselect_v0852_all_mse": [
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p17covb001c2_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_horizon_p17verifiedb001c3_mse": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_horizon_p17verifiedb001c1_mse": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_horizon_p17covb001c2_mse": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_v0852_node3": [
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_v0852_node1",
+    "20261105_projected_v0852_node2",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_v0852_node2": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_v0852_node1": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_v0852_node16": [
+    "20261105_horizon_p17covb001c2_mse",
+    "20261105_projected_v0852_node13",
+    "20261105_projected_v0852_node15"
+  ],
+  "20261105_projected_v0852_node13": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_v0852_node15": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node14"
+  ],
+  "20261105_projected_v0852_node14": [
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_v0852_node12",
+    "20261105_projected_v0852_node13"
+  ],
+  "20261105_projected_v0852_node12": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_cdfswap_ablate_exact_ridge_mse",
+    "20261105_factorblockswap_interaction_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_horizon_p15covb001c2_mse",
+    "20261105_horizon_p15covb001c3_mse",
+    "20261105_horizon_p15covb003c1_mse",
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_horizon_p15statsb003c1_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_individualdlinear_lr0p001_mse",
+    "20261105_individualdlinear_lr0p005_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_projected_v0852_node10",
+    "20261105_projected_v0852_node11",
+    "20261105_ridge_individual1_mse",
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_strongviewfeedback_uniform_mse"
+  ],
+  "20261105_projected_v0852_node10": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse"
+  ],
+  "20261105_projected_v0852_node11": [
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_v0852_node10"
+  ],
+  "20261105_projected_v0852_node19": [
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_v0852_node17",
+    "20261105_projected_v0852_node18",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_v0852_node18": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_v0852_node17": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_v0852_node9": [
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_v0852_node7",
+    "20261105_projected_v0852_node8",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_v0852_node7": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_cdfswap_ablate_exact_ridge_mse",
+    "20261105_factorblockswap_interaction_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_horizon_p15covb001c2_mse",
+    "20261105_horizon_p15covb001c3_mse",
+    "20261105_horizon_p15covb003c1_mse",
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_horizon_p15statsb003c1_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_individualdlinear_lr0p001_mse",
+    "20261105_individualdlinear_lr0p005_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_projected_v0852_node6",
+    "20261105_ridge_individual1_mse",
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_strongviewfeedback_uniform_mse"
+  ],
+  "20261105_projected_v0852_node6": [
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_v0852_node5"
+  ],
+  "20261105_projected_v0852_node5": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_v0852_node4"
+  ],
+  "20261105_projected_v0852_node4": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_projected_v0852_node8": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_horizon_p17verifiedb001c2_mse": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_horizon_p17covb001c3_mse": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_compact_p20analogueb003c1_mse": [
+    "20261105_analogueadapt_future_case_mse",
+    "20261105_analogueadapt_history_only_mse",
+    "20261105_analogueadapt_phase_future_case_mse",
+    "20261105_compact_p19factsb001c3_mse"
+  ],
+  "20261105_analogueadapt_history_only_mse": [
+    "20261105_analoguecontext_history_only_mse"
+  ],
+  "20261105_analoguecontext_history_only_mse": [
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_analogueadapt_future_case_mse": [
+    "20261105_analoguecontext_future_case_mse"
+  ],
+  "20261105_analoguecontext_future_case_mse": [
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_analogueadapt_phase_future_case_mse": [
+    "20261105_analoguecontext_phase_future_case_mse"
+  ],
+  "20261105_analoguecontext_phase_future_case_mse": [
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_transformedcalft_random_mse"
+  ],
+  "20261105_compact_p19factsb001c3_mse": [
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_blockcolumns_v0920_b32_mse": [
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_compact_p19memoryb001c2_mse": [
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_compact_p19factsb001c2_mse": [
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_compact_p19memoryb001c3_mse": [
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_blockcolumns_v0920_b64_mse": [
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_columnselect_v0852_greedy3_mse": [
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c3_mse"
+  ],
+  "20261105_projected_final0925_node38": [
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_blockcolumns_v0920_b32_mse",
+    "20261105_columnselect_final0925_all_mse",
+    "20261105_compact_p19factsb001c3_mse",
+    "20261105_compact_p20analogueb003c1_mse",
+    "20261105_projected_final0925_node29",
+    "20261105_projected_final0925_node32",
+    "20261105_projected_final0925_node37",
+    "20261105_projected_final0925_node9"
+  ],
+  "20261105_projected_final0925_node32": [
+    "20261105_blockcolumns_v0824_b32_mse",
+    "20261105_blockcolumns_v0920_b32_mse",
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p16covb001c1_mse",
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_horizon_p16covb001c3_mse",
+    "20261105_horizon_p16statsb001c2_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_projected_final0925_node31",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_horizon_p16statsb001c2_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_horizon_p16covb001c3_mse": [
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_blockcolumns_v0824_b32_mse": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_ridge_individual1_mse"
+  ],
+  "20261105_projected_final0925_node31": [
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_final0925_node30"
+  ],
+  "20261105_projected_final0925_node30": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse"
+  ],
+  "20261105_projected_final0925_node29": [
+    "20261105_blockcolumns_v0824_b32_mse",
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p16covb001c1_mse",
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_horizon_p16covb001c3_mse",
+    "20261105_horizon_p16statsb001c2_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_projected_final0925_node15",
+    "20261105_projected_final0925_node18",
+    "20261105_projected_final0925_node21",
+    "20261105_projected_final0925_node24",
+    "20261105_projected_final0925_node25",
+    "20261105_projected_final0925_node26",
+    "20261105_projected_final0925_node28",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_projected_final0925_node21": [
+    "20261105_horizon_p16covb001c1_mse",
+    "20261105_projected_final0925_node19",
+    "20261105_projected_final0925_node20"
+  ],
+  "20261105_projected_final0925_node20": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_final0925_node19": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_cdfswap_ablate_exact_ridge_mse",
+    "20261105_factorblockswap_interaction_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_horizon_p15covb001c2_mse",
+    "20261105_horizon_p15covb001c3_mse",
+    "20261105_horizon_p15covb003c1_mse",
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_horizon_p15statsb003c1_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_individualdlinear_lr0p001_mse",
+    "20261105_individualdlinear_lr0p005_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_strongviewfeedback_uniform_mse"
+  ],
+  "20261105_projected_final0925_node26": [
+    "20261105_factorblockscaled_sum_mse",
+    "20261105_factorblockswap_sum_mse"
+  ],
+  "20261105_projected_final0925_node25": [
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_projected_final0925_node13",
+    "20261105_projected_final0925_node14"
+  ],
+  "20261105_projected_final0925_node14": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_final0925_node13": [
+    "20261105_auto_p10b001c2_mse",
+    "20261105_auto_p10b004c2_mse",
+    "20261105_blockcolumns_v0824_b16_mse",
+    "20261105_cdfswap_ablate_exact_both_mse",
+    "20261105_cdfswap_ablate_exact_ridge_mse",
+    "20261105_factorblockswap_interaction_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p12b001c2_mse",
+    "20261105_horizon_p15covb001c2_mse",
+    "20261105_horizon_p15covb001c3_mse",
+    "20261105_horizon_p15covb003c1_mse",
+    "20261105_horizon_p15statsb001c2_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p15statsb002c1_mse",
+    "20261105_horizon_p15statsb002c2_mse",
+    "20261105_horizon_p15statsb003c1_mse",
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_individualdlinear_lr0p001_mse",
+    "20261105_individualdlinear_lr0p005_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_projected_final0925_node12",
+    "20261105_ridge_individual1_mse",
+    "20261105_specialist_combo_core_lora_calendar_mse",
+    "20261105_strongviewfeedback_uniform_mse"
+  ],
+  "20261105_projected_final0925_node12": [
+    "20261105_horizon_p15statsb003c2_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_final0925_node11"
+  ],
+  "20261105_projected_final0925_node11": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_final0925_node10"
+  ],
+  "20261105_projected_final0925_node10": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_projected_final0925_node15": [
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_final0925_node13",
+    "20261105_projected_final0925_node14",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_final0925_node28": [
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_projected_final0925_node27",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_final0925_node27": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_final0925_node18": [
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_final0925_node16",
+    "20261105_projected_final0925_node17",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_final0925_node16": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_final0925_node17": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_final0925_node24": [
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_final0925_node22",
+    "20261105_projected_final0925_node23",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_final0925_node22": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_final0925_node23": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_final0925_node9": [
+    "20261105_analogueadapt_history_only_mse",
+    "20261105_compact_p20analogueb003c1_mse",
+    "20261105_projected_final0925_node8"
+  ],
+  "20261105_projected_final0925_node8": [
+    "20261105_compact_p19factsb001c3_mse",
+    "20261105_projected_final0925_node7"
+  ],
+  "20261105_projected_final0925_node7": [
+    "20261105_blockcolumns_v0824_b32_mse",
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p16covb001c1_mse",
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_horizon_p16covb001c3_mse",
+    "20261105_horizon_p16statsb001c2_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_projected_final0925_node3",
+    "20261105_projected_final0925_node6",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_projected_final0925_node3": [
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_final0925_node1",
+    "20261105_projected_final0925_node2",
+    "20261105_variabletree_calendar_d2_mse"
+  ],
+  "20261105_projected_final0925_node1": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_final0925_node2": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ],
+  "20261105_projected_final0925_node6": [
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_p11constant_ranked_mse",
+    "20261105_projected_final0925_node5"
+  ],
+  "20261105_projected_final0925_node5": [
+    "20261105_factorblockswap_sum_mse",
+    "20261105_projected_final0925_node4"
+  ],
+  "20261105_projected_final0925_node4": [
+    "20261105_compactrotation_exact_mse",
+    "20261105_learnedrotation_r003_masked_mse"
+  ],
+  "20261105_projected_final0925_node37": [
+    "20261105_compact_p19factsb001c3_mse",
+    "20261105_projected_final0925_node35",
+    "20261105_projected_final0925_node36"
+  ],
+  "20261105_projected_final0925_node35": [
+    "20261105_blockcolumns_v0824_b32_mse",
+    "20261105_blockcolumns_v0920_b16_mse",
+    "20261105_compact_p18factsb003c2_mse",
+    "20261105_factorblockswap_sum_mse",
+    "20261105_horizon_p15statsb001c3_mse",
+    "20261105_horizon_p16covb001c1_mse",
+    "20261105_horizon_p16covb001c2_mse",
+    "20261105_horizon_p16covb001c3_mse",
+    "20261105_horizon_p16statsb001c2_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_horizon_p17verifiedb001c1_mse",
+    "20261105_horizon_p17verifiedb001c2_mse",
+    "20261105_horizon_p17verifiedb001c3_mse",
+    "20261105_projected_final0925_node34",
+    "20261105_projected_p16_node19",
+    "20261105_projected_v0852_node20"
+  ],
+  "20261105_projected_final0925_node34": [
+    "20261105_horizon_p17covb001c3_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_projected_final0925_node33"
+  ],
+  "20261105_projected_final0925_node33": [
+    "20261105_columnselect_v0839_all_mse",
+    "20261105_horizon_p16statsb002c1_mse",
+    "20261105_horizon_p16statsb002c2_mse",
+    "20261105_projected_p16_node19"
+  ],
+  "20261105_projected_final0925_node36": [
+    "20261105_columnselect_v0823_standalone_mse",
+    "20261105_learnedrotation_r003_masked_mse",
+    "20261105_matrixadapter_triangular_mse",
+    "20261105_ridge_individual1_mse",
+    "20261105_rotationcontinued_lr1e7_mse",
+    "20261105_rotationseed_2024_mse",
+    "20261105_variabletree_calendar_d2_s50_mse",
+    "20261105_variabletree_earlycalendar_d4_mse"
+  ]
+}

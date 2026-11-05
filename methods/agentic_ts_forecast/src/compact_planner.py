@@ -1,0 +1,34 @@
+"""Compact typed planner: bounded per-column edits, small evidence, no code execution."""
+from common import *
+from blend_sources import get_source
+from horizon_policy import canonical,predict
+import sys,copy
+phase,mode=sys.argv[1:3];assert mode in ('facts','memory');out=RUN/'controller'/phase;out.mkdir(parents=True,exist_ok=False);subprocess.run([sys.executable,str(ROOT/'src/preflight.py'),'--root',str(ROOT),'--run-name',f'20261105_compact_{phase}_controller'],check=True);registry_path=pathlib.Path(sys.argv[3]) if len(sys.argv)>3 else RUN/'controller/p17_registry.json';batch_count=int(sys.argv[4]) if len(sys.argv)>4 else 3;assert batch_count in (1,3);registry=json.loads(registry_path.read_text());assert len(registry)==4 and len(set(registry))==4;save_json(out/'registry_record.json',dict(path=str(registry_path),sha256=hashlib.sha256(registry_path.read_bytes()).hexdigest(),sources=registry,batches=batch_count));p=np.stack([get_source(k,'val') for k in registry],1);y=np.load(RUN/'cache/val_targets.npy');e=p.astype(float)-y[:,None];mse=np.stack([np.mean(e[:,:,b:b+16]**2,axis=(0,2)) for b in range(0,64,16)],-1);cos=[];same=[]
+for b in range(0,64,16):
+ a=e[:,:,b:b+16];cos.append([(a[:,0]*a[:,s]).mean((0,1))/np.sqrt(np.maximum((a[:,0]**2).mean((0,1))*(a[:,s]**2).mean((0,1)),1e-20)) for s in (1,2,3)]);same.append([np.all(p[:,0,b:b+16]==p[:,s,b:b+16],axis=(0,1)) for s in (1,2,3)])
+evidence=dict(columns=COLS,source_index_order=registry,source_column_bin_mse=np.round(mse,6).tolist(),source0_vs_1_2_3_cosines_bin_source_column=np.round(cos,6).tolist(),source0_vs_1_2_3_exact_equal_bin_source_column=np.asarray(same).tolist());save_json(out/'evidence.json',evidence);memory=[]
+if mode=='memory':
+ mem=json.loads((RUN/'controller/research_memory_0839.json').read_text());memory=[dict(id=a['id'],rule=a['corrective_rule']) for a in mem['records']];save_json(out/'memory.json',memory)
+best=float(np.mean(e[:,0]**2));bestid=registry[0][4:];history=[];hashes={hashlib.sha256(p[:,0].tobytes()).hexdigest():bestid};del p,y,e
+
+def convert(experiment):
+ assert set(experiment)=={'hypothesis','changes'} and isinstance(experiment['hypothesis'],str);changes=experiment['changes'];assert isinstance(changes,list) and len(changes)<=2;variables={}
+ for a in changes:
+  assert set(a)=={'column','source','knots'} and a['column'] in COLS and a['column'] not in variables and type(a['source']) is int and a['source'] in (1,2,3);w=np.asarray(a['knots'],float);assert w.shape==(4,) and np.isfinite(w).all() and ((w>=0)&(w<=1)).all();arr=np.zeros((4,4));arr[:,0]=1-w;arr[:,a['source']]=w;variables[a['column']]=arr.tolist()
+ return canonical(dict(source_ids=registry,knot_weights=[[1,0,0,0]]*4,variable_weights=variables),registry)
+for batch in range(1,batch_count+1):
+ guard(2400);recent=[{k:r[k] for k in ('id','mse','per_variable_mse','changes','actual_changed_variables','duplicate_prediction_of')} for r in history[-3:]];packet=dict(evidence=evidence,research_memory=memory,previous_three=recent,incumbent=dict(id=bestid,mse=best),scope='offline validation architecture selection only; all source models frozen, test sealed; source0 remains the fixed baseline throughout this phase, NOT automatically replaced by incumbent')
+ system='Return ONLY one JSON object, no prose or analysis: {"reflection":{"findings":["<=30 words each, max2"],"limitations":["max1"]},"experiments":[exactly3 objects]}. Each experiment exactly {"hypothesis":"<=25 words","changes":[max2 objects]}. Each change exactly {"column":"one known column","source":1 or2 or3,"knots":[4 weights in0..1]}. Unchanged columns use source0. Changed column blends source0 with chosen source, linear interpolation at leads7.5,23.5,39.5,55.5. Candidate1 MUST have all4knots identical for everychange (or emptychanges), as constant outer control. Source0 is fixed throughout; preserve desired old changes explicitly. Error-table dimensions are source,column,16step-bin; cosine/equality dimensions bin,alternate-source,column. Never confuse cosine1 with exact equality. No noise-floor/causal/significance claims. Fixed sources and per-column outer blending have additive column SSE, no cross-column synergy. Reflect on previous_three only, no invented history. Keep response under1200 tokens.'
+ msgs=[dict(role='system',content=system),dict(role='user',content=json.dumps(packet,separators=(',',':')))];save_json(out/f'batch{batch:03d}_request.json',msgs);ans=api(msgs,2000);save_json(out/f'batch{batch:03d}_response.json',ans)
+ try:
+  obj=parse_json(ans['content']);assert set(obj)=={'reflection','experiments'} and isinstance(obj['reflection'],dict);assert set(obj['reflection'])=={'findings','limitations'} and isinstance(obj['reflection']['findings'],list) and isinstance(obj['reflection']['limitations'],list);exps=obj['experiments'];assert len(exps)==3;cs=[convert(v) for v in exps];assert all(np.allclose(v,np.asarray(v)[0]) for v in cs[0]['variable_weights'].values())
+ except Exception as exc:save_json(out/'STOPPED.json',dict(batch=batch,stage='proposal_schema',reason=repr(exc),finish_reason=ans.get('finish_reason')));raise
+ save_json(out/f'batch{batch:03d}_reflection.json',obj['reflection'])
+ for i,(exp,cfg) in enumerate(zip(exps,cs)):
+  name=f'20261105_compact_{phase}b{batch:03d}c{i+1}_mse';save_json(out/(name+'_proposal.json'),dict(proposal=exp,executed=cfg,origin='llm',mode=mode,code_revision=git_head()))
+  with (out/(name+'.log')).open('w') as log:r=subprocess.run([sys.executable,str(ROOT/'src/launch_snapshot.py'),'horizon_policy.py',json.dumps(cfg),name],stdout=log,stderr=subprocess.STDOUT)
+  if r.returncode:save_json(out/'STOPPED.json',dict(candidate=name,stage='execution',exit_code=r.returncode));raise SystemExit(r.returncode)
+  m=json.loads((ROOT/'runs'/name/'metrics.json').read_text())['metrics']['val'];v=get_source('run:'+name,'val');base=get_source('run:'+bestid,'val');h=hashlib.sha256(v.tobytes()).hexdigest();row=dict(id=name,mse=m['mse'],per_variable_mse=m['per_variable_mse'],changes=exp['changes'],reference_id=bestid,reference_mse=best,actual_changed_variables=[col for j,col in enumerate(COLS) if not np.array_equal(v[:,:,j],base[:,:,j])],duplicate_prediction_of=hashes.get(h));hashes.setdefault(h,name);history.append(row)
+  if m['mse']<best:best=m['mse'];bestid=name
+  save_json(out/'history.json',history);save_json(out/'champion.json',dict(candidate=bestid,mse=best));print(name,m['mse'],flush=True)
+ans=api([dict(role='system',content='Return JSON findings and limitations about these3 exact validation results. Max150 words. No significance, noise-floor, causal or synergy claims.'),dict(role='user',content=json.dumps(history[-3:]))],700);save_json(out/'final_batch_reflection.json',ans);save_json(out/'status.json',dict(stage='complete',candidate=bestid,mse=best));print('COMPACT_COMPLETE',phase,best,flush=True)

@@ -1,0 +1,14 @@
+{
+  "id": "agentic_ts_forecast",
+  "display_name": "Frozen agentic forecast",
+  "adapter": "methods/agentic_ts_forecast/adapter.py",
+  "implementation": "methods/agentic_ts_forecast",
+  "supported_datasets": [
+    "ETTh1",
+    "ETTm1"
+  ],
+  "provenance": {
+    "ETTh1": "3ae0728b45c8f22e142f5250642db73ed7bf4cb9",
+    "ETTm1": "ETTm1-portable-pool-v1"
+  }
+}

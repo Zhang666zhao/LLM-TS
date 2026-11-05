@@ -1,0 +1,91 @@
+{
+  "engine": "projected_composition_v1",
+  "operator": "horizon_policy_v1",
+  "operator_config": {
+    "knot_weights": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "variable_weights": {
+      "OT": [
+        [
+          0.6,
+          0.4,
+          0.0,
+          0.0
+        ],
+        [
+          0.6,
+          0.4,
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.5,
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          0.7,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "engine": "horizon_policy_v1",
+    "knots": [
+      7.5,
+      23.5,
+      39.5,
+      55.5
+    ],
+    "runtime_llm": false,
+    "code_revision": "e3b194003fd561c47214209af1694d99a5d18d7e"
+  },
+  "original_slots": 4,
+  "source_slots": [
+    0,
+    1
+  ],
+  "source_ids": [
+    "run:20261105_projected_p16_node17",
+    "run:20261105_projected_p16_node18"
+  ],
+  "required_columns": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "compiled_from_config": "LLM_predict/runs/20261105_horizon_p16covb003c2_mse/config.json",
+  "compiled_from_config_sha256": "8351a00285ca8f030353d95f215f8321b1a3aab128fd60409e90f7e067524e36",
+  "runtime_llm": false,
+  "code_revision": "12332f25d9d7e9bc51ecab73fd4ebdfc87f3462d"
+}

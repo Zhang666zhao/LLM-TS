@@ -1,0 +1,15 @@
+{
+  "engine": "blend_sources_v1",
+  "sources": {
+    "run:20261105_fullpoint_pca_mse": 0.18,
+    "run:20261105_viewpoint_full_integral_mse": 0.27,
+    "run:20261105_transformedmse_pca_mse": 0.3,
+    "run:20261105_transformedmse_random_mse": 0.25
+  },
+  "amplitude": 1,
+  "mean_shrink": 0,
+  "smooth": 1,
+  "proxy_bias_strength": 0,
+  "artifact_role": "unscored intermediate for matched point-extraction substitution; no labels read",
+  "code_revision": "2607547c31c6d23ad5f3d3635230b370481df8d2"
+}

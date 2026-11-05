@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "run:20261105_cdfswap_both_0906a70c3b30_unscored": 0.8,
+    "run:20261105_viewpoint_full_integral_mse": 0.2
+  },
+  "amplitude": 1.0,
+  "mean_shrink": 0.0,
+  "smooth": 1,
+  "proxy_bias_strength": 0.0,
+  "code_revision": "c5283dffe1445ab08b8bd5df01bfb25234003b2d",
+  "engine": "blend_sources_v1",
+  "runtime_llm": false,
+  "clone_origin": "20261105_auto_p08b001c1_mse",
+  "artifact_role": "unscored DAG intermediate, no target read",
+  "checkpoint_replacements": {
+    "20261105_transformedmse_pca_mse": "20261105_transformedcdfmse_pca_mse",
+    "20261105_transformedmse_random_mse": "20261105_transformedcdfmse_random_mse"
+  }
+}
