@@ -1,72 +1,21 @@
-# LLM-TS
+# LLM-TS · 让语言模型参与时序预测
 
-## agentic_ts_forecast 分支
+把同一段历史交给几个预测模型，它们往往会在不同的地方出错：有的擅长预测接下来的几步，有的能更好地跟上某个变量的日周期。我们想知道，语言模型读过这些误差之后，能不能提出一个值得采用的修改？
 
-首次使用请读 **[新同学操作手册：安装、恢复资料、复现实验、部署与方舟入口](methods/agentic_ts_forecast/README.md)**。本分支在研究分支上新增 ETTh1 和 ETTm1 的冻结预测方法，下面保留历史方向标签项目说明。
+ETTh1 实验里有一个很小的例子。原方案已经能预测七个变量未来64小时的变化。DeepSeek 提议保留其中六个变量的预测，只改负荷变量 LULL：原预测占 80%，另一个工具占 20%。程序在验证集上检查了这项提议，整体均方误差从 0.46810068 降到 0.46809606。接下来又有一个修改在验证集上排到了第一，但它在测试集上的误差反而略高。这也是我们把十种配置放在一起研究的原因：既想知道 LLM 提出了什么，也想知道哪些改动经得起后续数据的检验。
 
-## 未来方向标签辅助预测研究分支
+**想了解方法，可以先读[《LLM 辅助的时序专家组合》HTML 论文](reports/agentic_ts_forecast/ETTh1_Top10_NeurIPS_Style.html)。** 图1展示 LLM 在哪一步参与研究，图2到图4用油温这一个变量串起三类预测方法。GitHub 文件页显示 HTML 源码，点击 **Download raw file**，再用浏览器打开即可阅读。公式和图片都包含在文件里。
 
-本分支用于从oracle方向标签走向历史输入可预测标签。先读
-[简版计划](research/direction_conditioning/PLAN.md)、
-[历史口径](benchmarks/oracle_v1/protocol.md)与
-[归档状态](benchmarks/oracle_v1/provenance/README.md)。
-固定输入为历史时间序列，输出为逐变量-1/0/+1；新标签阈值可配置，
-历史±0.5结果不改写。本次未启动训练或API调用，未完成远端完整归档。
-已有[MD报告](reports/oracle_v1/report.md)与[单文件HTML报告](reports/oracle_v1/report.html)。
+![LLM 在离线阶段提出方案，冻结后的数值工具独立完成预测](reports/agentic_ts_forecast/framework.png)
 
+**想自己跑一遍，可以从[新同学操作手册](methods/agentic_ts_forecast/README.md)开始。** 两个实验适合回答不同的问题：
 
-LLM-TS is a shared benchmark repository for comparing time-series forecasting
-methods under one data and evaluation contract. Method implementations live in
-`methods/`; datasets, checkpoints, large artifacts, and full run directories do
-not belong in Git.
+| 如果你想…… | 推荐从这里开始 |
+|---|---|
+| 弄清 ETTh1 上十种方法为什么得分接近 | 用手册里的 ETTh1 命令复现十种组合，再对照[完整指标表](methods/agentic_ts_forecast/evaluation/top10_results.csv)。 |
+| 给一段新历史，实际预测后面会发生什么 | 用 ETTm1 的冻结模型。输入512条连续的15分钟观测，它会返回接下来16小时的七变量预测。 |
+| 让 LLM 再提一批规则 | 在完成验证后，按手册配置自己的方舟密钥并启动新一轮提案。日常预测只运行已经选好的数值工具。 |
 
-The first benchmark snapshot compares **TS-RAG**, **Chronos-Bolt**, and
-supervised **DLinear** using
-context length 512, prediction length 64, and variable-level MSE/MAE. The
-published result is imported from an existing completed experiment. Importing
-or validating it does not rerun inference.
+从 ETTh1 转到 ETTm1，我们保留了“512步历史预测64步”以及十种组合规则，重新拟合了一个可以独立部署的轻量工具池。ETTm1 上，LLM 从验证反馈中重新找到了已有的 M1 规则。最终按验证误差选出的方案来自程序搜索，它的测试 MSE 为 **0.271542**，同窗口 DLinear 为 **0.292529**。[ETTm1 结果表](methods/agentic_ts_forecast/transfer/artifacts/ETTm1/results.csv)
 
-## Repository layout
-
-```text
-configs/                 benchmark, experiment, and local-path templates
-data/manifests/          versioned dataset contracts (metadata only)
-evaluation/              result schema, import, validation, and comparison
-methods/                 isolated method implementations and adapters
-results/benchmark_v1/    committed, compact benchmark results
-scripts/                 common entry points
-tests/                   contract and regression tests
-```
-
-## Existing benchmark result
-
-The original workbook is preserved at
-`results/benchmark_v1/source/TSRAG_ChronosBolt_variable_metrics.xlsx`.
-Machine-readable outputs are generated from its `Long data` sheet:
-
-```bash
-python scripts/import_existing_results.py
-python scripts/compare_all.py
-python -m unittest discover -s tests -v
-```
-
-## Running a method
-
-Copy the local path template and point it at shared NFS storage:
-
-```bash
-cp configs/paths.example.yaml configs/paths.local.yaml
-python scripts/run_method.py --method tsrag --dataset ETTh1 --dry-run
-python scripts/run_method.py --method chronos_bolt --dataset ETTh1 --dry-run
-python scripts/run_method.py --method dlinear --dataset ETTh1 --dry-run
-```
-
-Remove `--dry-run` only when an inference run is intentionally requested.
-Every new method must satisfy the contract in `methods/README.md` and emit the
-schema documented in `evaluation/README.md`.
-
-## Collaboration
-
-Create one feature branch per method or evaluation change. Keep run IDs
-immutable, record the Git commit and data-manifest hash, and merge through
-review instead of overwriting another contributor's result directory.
+这个分支沿用了仓库里的[方向标签研究](https://github.com/Zhang666zhao/LLM-TS/tree/research/direction-conditioned-forecasting)。查找早期实验与模型时，可以从[历史研究报告](reports/oracle_v1/report.md)或[历史权重 Release（不含数据）](https://github.com/Zhang666zhao/LLM-TS/releases/tag/forecast-weights-20261102)进入。
