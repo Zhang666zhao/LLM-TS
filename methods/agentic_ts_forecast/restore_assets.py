@@ -1,4 +1,4 @@
-"""Restore verified private benchmark files from an authorized existing copy."""
+"""Restore checksum-verified benchmark files from a release archive or existing copy."""
 import argparse
 import csv
 import hashlib
@@ -50,6 +50,7 @@ def generate_local_inputs(group):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     mode=ap.add_mutually_exclusive_group(required=True)
+    mode.add_argument('--archive',type=Path,help='Downloaded release tar.gz; reads only manifest-listed regular files')
     mode.add_argument('--from-package',type=Path,help='Existing fully provisioned agentic_ts_forecast directory')
     mode.add_argument('--source-root',help='Shared agentic_TS directory containing LLM_predict and TSRAG')
     ap.add_argument('--ssh',help='SSH host alias for a remote --source-root')
@@ -64,7 +65,19 @@ def main():
         if dest.exists():
             if sha(dest)!=r['sha256']:raise ValueError(f'Existing file differs; inspect or move {dest}')
         else:pending[rel]=r
-    if pending and a.ssh:
+    if a.archive:
+        seen=set()
+        with tarfile.open(a.archive,mode='r:gz') as t:
+            for item in t:
+                if not item.isfile() or item.name not in manifest or item.name in seen:
+                    raise ValueError(f'Unexpected or duplicate archive member: {item.name}')
+                seen.add(item.name)
+                if item.name in pending:
+                    r=pending[item.name]
+                    if item.size!=r['bytes']:raise ValueError('Archive size mismatch')
+                    install(t.extractfile(item),ROOT/item.name,r['sha256'])
+        if set(pending)-seen:raise ValueError('Archive is missing required files')
+    elif pending and a.ssh:
         remote={r['source']:(ROOT/rel,r['sha256']) for rel,r in pending.items()}
         cmd='tar -C '+shlex.quote(a.source_root)+' -cf - -- '+shlex.join(remote)
         with subprocess.Popen(['ssh','-o','BatchMode=yes','--',a.ssh,cmd],stdout=subprocess.PIPE) as p:

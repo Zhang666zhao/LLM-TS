@@ -22,7 +22,19 @@ python smoke.py
 
 ## 2. 找到与你的工作环境匹配的实验材料
 
-克隆后，你已经有了代码、规则和结果表。要复现同一组数字，还需要与原实验一致的数据和权重。下面三种方式任选一种：已有完整副本就用 A，能直接访问共享目录就用 B，通过 SSH 访问则用 C。恢复程序会逐个校验文件。[数据使用说明](../../data/RESEARCH_DATA.md)
+克隆后，你已经有了代码、规则和结果表。要复现同一组数字，还需要与原实验一致的数据和权重。推荐直接下载下面的 Release 冻结包。已有完整副本或共享存储的同学，也可以使用后面的 A、B、C。恢复程序会逐个校验文件。[数据使用说明](../../data/RESEARCH_DATA.md)
+
+**直接下载冻结包（推荐）。** [2026-11-06 运行资源 Release](https://github.com/Zhang666zhao/LLM-TS/releases/tag/agentic-forecast-assets-20261106) 包含两个数据集各自所需的资源，共 66 个文件。ETTh1 包含固定基准的上游预测和核对数组；ETTm1 包含历史输入、权重和拟合后的工具状态。两个包都包含与实验哈希一致的 ETT CSV；数据来源为 [ETDataset](https://github.com/zhouhaoyi/ETDataset)，使用时请遵循原项目的数据许可与引用要求。这是从研究目录整理出的运行依赖包，未包含完整搜索日志和 LLM 原始交互。
+
+```bash
+release=https://github.com/Zhang666zhao/LLM-TS/releases/download/agentic-forecast-assets-20261106
+curl -fL "$release/agentic-forecast-ETTh1-20261106.tar.gz" -o /tmp/agentic-forecast-ETTh1-20261106.tar.gz
+curl -fL "$release/agentic-forecast-ETTm1-20261106.tar.gz" -o /tmp/agentic-forecast-ETTm1-20261106.tar.gz
+python restore_assets.py --archive /tmp/agentic-forecast-ETTh1-20261106.tar.gz --dataset ETTh1
+python restore_assets.py --archive /tmp/agentic-forecast-ETTm1-20261106.tar.gz --dataset ETTm1
+```
+
+恢复程序根据仓库清单逐文件校验 SHA-256，并生成本地窗口索引和示例输入。只运行一个数据集时，下载并恢复对应包即可。Release 另附 `SHA256SUMS`，可用于核对整个压缩包。资源保存在 Git 忽略目录中。
 
 **方式 A：已有完整本地目录。** 用你自己的实际路径替换下例。命令会从既有完整包复制两套实验的必需文件并校验 SHA-256。
 
@@ -44,7 +56,7 @@ python restore_assets.py --ssh GPU_Foundation --source-root /path/to/shared/agen
 
 只跑一个数据集时加 `--dataset ETTh1` 或 `--dataset ETTm1`。恢复会跳过已验证文件，遇到哈希不符时报告实际路径并停止。ETTm1 单窗口示例的历史输入在恢复后由本地数据生成。[逐文件来源、大小和校验值](restore_manifest.json)
 
-**245份历史权重的位置。** [forecast-weights-20261102](https://github.com/Zhang666zhao/LLM-TS/releases/tag/forecast-weights-20261102) 是研究分支的历史模型权重 Release，不含数据。这两个实验还需要版本匹配的冻结输入或 ETTm1 工具状态。完整复现应以本分支的恢复清单为准，不能只下载历史权重，也不能将公共 ETT CSV 静默当成相同字节的冻结数据。没有共享存储权限的读者可以运行合成自检、查阅实现和公开指标；如需精确复现，请向维护者申请清单中的材料。
+**245份历史权重的位置。** [forecast-weights-20261102](https://github.com/Zhang666zhao/LLM-TS/releases/tag/forecast-weights-20261102) 是研究分支的历史模型权重 Release，不含数据。这两个实验还需要版本匹配的冻结输入或 ETTm1 工具状态。完整复现应以本分支的恢复清单为准，不能只下载历史权重，也不能将公共 ETT CSV 静默当成相同字节的冻结数据。本分支的精确复现资源现已通过上面的独立 Release 提供，无需共享存储权限。
 
 ## 3. 复现指标
 

@@ -30,6 +30,8 @@ M1–M10 沿用 ETTh1 的验证排名编号。ETTh1 在揭晓测试结果前选�
 
 十种配置在两个数据集上的测试 MSE 都低于各自的 DLinear。ETTh1 上，M2 的测试 MSE 最低，M4 的测试 MAE 最低；ETTm1 上，M4 的两项误差都是十种配置中最低的。ETTm1 最终部署的 Rule1 是额外搜索得到的方案，测试 MSE 为 0.271542。[ETTh1 完整指标](methods/agentic_ts_forecast/evaluation/top10_results.csv) · [ETTm1 完整指标](methods/agentic_ts_forecast/transfer/artifacts/ETTm1/results.csv)
 
+两套实验的[冻结运行资源现已提供下载](https://github.com/Zhang666zhao/LLM-TS/releases/tag/agentic-forecast-assets-20261106)，包含匹配的数据、权重、工具状态和 ETTh1 固定基准预测。下载后按操作手册恢复，即可运行上表的方法。
+
 **想自己跑一遍，可以从[新同学操作手册](methods/agentic_ts_forecast/README.md)开始。** 两个实验适合回答不同的问题：
 
 | 如果你想…… | 推荐从这里开始 |

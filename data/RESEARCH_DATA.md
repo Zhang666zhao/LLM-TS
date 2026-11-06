@@ -79,3 +79,14 @@ Reports can be read without any dataset. Rebuilding the HTML currently requires
 private metric files and read-only access to the archived server example; the
 default builder removes historical numbers from its Git output. An explicit
 `--private-example` output is restricted to ignored `runs/`.
+
+## Agentic forecasting resources (2026-11-06)
+
+The maintainer authorized publishing the ETTh1/ETTm1 runtime assets separately
+from Git in [agentic-forecast-assets-20261106](https://github.com/Zhang666zhao/LLM-TS/releases/tag/agentic-forecast-assets-20261106).
+This release includes matching ETT CSVs, checkpoints, fitted ETTm1 tool state
+and ETTh1 fixed-benchmark prediction/reference arrays. It does not include
+the direction-label NPZs or raw LLM requests/responses discussed above.
+See the [operator guide](../methods/agentic_ts_forecast/README.md) for restoration
+and the pinned per-file SHA-256 manifest. Cite the original
+[ETDataset](https://github.com/zhouhaoyi/ETDataset) and follow its data terms.
